@@ -1,0 +1,29 @@
+{
+  "test_name": "Live Polling Validation Test",
+  "start_time": "2026-03-02T02:51:09Z",
+  "duration_minutes": 15,
+  "polling_interval_seconds": 300,
+  "stores": {
+    "smacked_village": {
+      "total_polls": 0,
+      "successful_polls": 0,
+      "failed_polls": 0,
+      "total_changes": 0,
+      "extractions": []
+    },
+    "alta": {
+      "total_polls": 0,
+      "successful_polls": 0,
+      "failed_polls": 0,
+      "total_changes": 0,
+      "extractions": []
+    },
+    "happy_munkey": {
+      "total_polls": 0,
+      "successful_polls": 0,
+      "failed_polls": 0,
+      "total_changes": 0,
+      "extractions": []
+    }
+  }
+}

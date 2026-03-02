@@ -1,104 +1,65 @@
-# Stealth Scraper Bake-off Project
+# Stealth Scraper Bake-off Project (BudAlert)
 
 **Started:** 2026-03-01
-**Goal:** Build reliable scraping infrastructure for NYS cannabis dispensary product/inventory data
+**Repo:** https://github.com/Perk4/BudAlert
+**R2 Backup:** budalert-backups/backups/
 
 ---
 
-## Current Phase: Phase 6 — Scale-Up & Monitoring
+## Current Phase: Phase 7 — Inventory Validation
 
 ### Completed Phases
 
-**Phase 1: Store Recon** ✅
-- 20 NYC dispensaries profiled
+**Phase 1-3:** Research & patterns ✅
+**Phase 4:** Validation testing ✅
+**Phase 5:** Production deployment ✅
+**Phase 6:** Scale-up & monitoring ✅
 
-**Phase 2: Proxy Research** ✅
-- Oxylabs abandoned, tiered approach adopted
+**Phase 6 Results:**
+- 12+ working stores
+- 126+ products extracted
+- Monitoring infrastructure deployed
+- Polling scheduler configured
 
-**Phase 3: Stagehand + Pattern Analysis** ✅
-- Extraction patterns documented per platform
+### Phase 7: Inventory Validation 🔄 (In Progress)
 
-**Phase 4: Validation Testing** ✅
-- Blaze, Dutchie embed, Joint Ecommerce validated
-
-**Phase 5: Production Deployment** ✅
-- **Housing Works (Blaze):** 26 products, production-ready
-- **CONBUD (Dutchie Embed):** 26 products, CF bypass working
-- **Torches (Joint Ecommerce):** 6 products extracted
-- **Stoops (Joint Ecommerce):** 4 products extracted
-- **Alta:** Framework ready, needs completion
-- **Store reclassification:** All 20 stores audited
-
-### Phase 6: Scale-Up & Monitoring 🔄 (In Progress)
-
-**Objective:** Expand to all 20 stores, implement monitoring, optimize operations.
+**Problem:** We extract products but don't validate actual inventory quantities or verify change detection works.
 
 **Workstreams:**
 
-| Stream | Task | Stores | Status |
-|--------|------|--------|--------|
-| 6A | Easy custom sites | Smacked Village, Yerba Buena, Terp Bros, FlynnStoned, Happy Munkey | 🔄 |
-| 6B | Medium custom sites | Travel Agency, Gotham, Dazed, Green Apple, Chelsea Cannabis, Verilife | 🔄 |
-| 6C | LeafBridge platform | QUBE NYC | 🔄 |
-| 6D | Alta completion + inventory polling | Alta + polling infra | 🔄 |
-| 6E | Monitoring & alerting | All stores | 🔄 |
-| 6F | Hard targets | RISE (Jane), Curaleaf (MSO) | 🔄 |
+| Stream | Task | Goal |
+|--------|------|------|
+| 7A | Quantity extraction | Implement cart probing / dropdown parsing for real stock numbers |
+| 7B | Live polling test | Run 24-hour loop on 3 stores, capture real changes |
+| 7C | Ground truth validation | Manually verify scraped data matches reality |
+| 7D | Alert verification | Confirm alerts fire correctly on changes |
 
-**Expected Outputs:**
-- Working scrapers for all 20 stores
-- Unified monitoring dashboard
-- Inventory change detection
-- Alerting infrastructure
-- Cost/performance optimization
+**Success Criteria:**
+- [ ] Actual inventory quantities extracted (not just "in stock" boolean)
+- [ ] Change detection verified with real events
+- [ ] At least 10 products validated against ground truth
+- [ ] Alert system tested end-to-end
 
 ---
 
-## Production Coverage (Phase 5 Complete)
+## Inventory Validation Approach
 
-| Store | Platform | Products | Status |
-|-------|----------|----------|--------|
-| Housing Works | Blaze | 26 | ✅ Production |
-| CONBUD | Dutchie Embed | 26 | ✅ Working |
-| Torches | Joint Ecommerce | 6 | ✅ Working |
-| Stoops | Joint Ecommerce | 4 | ✅ Working |
-| Alta | Joint Ecommerce | 0 | 🟡 Framework ready |
-| **Subtotal** | | **62** | **4/20 stores** |
+### Current Gap
+Most scrapers return:
+```json
+{"name": "Product X", "price": 50, "stock_status": "in_stock"}
+```
 
----
+### Target Output
+```json
+{"name": "Product X", "price": 50, "quantity_available": 23, "last_verified": "2026-03-02T02:00:00Z"}
+```
 
-## Remaining Stores (Phase 6 Target)
-
-### Easy Custom (5 stores)
-- Smacked Village (getsmacked.online)
-- Yerba Buena (yerbabuena.nyc)
-- Terp Bros (terpbrosnyc.com)
-- FlynnStoned (flynnstoned.com)
-- Happy Munkey (happymunkey.com)
-
-### Medium Custom (6 stores)
-- The Travel Agency (thetravelagency.co) - Remix/React
-- Gotham (gotham.nyc)
-- Dazed Cannabis (dazed.fun)
-- Green Apple (greenapple.nyc)
-- Chelsea Cannabis Co. (chelseacannabis.co)
-- Verilife (verilife.com/ny)
-
-### New Platforms (1 store)
-- QUBE NYC (qubenyc.com) - LeafBridge
-
-### Hard Targets (2 stores)
-- RISE Manhattan (risecannabis.com) - Jane + Cloudflare
-- Curaleaf NYC (curaleaf.com) - MSO + Cloudflare
-
----
-
-## Tech Stack (Validated)
-
-| Tier | Use Case | Solution | Cost |
-|------|----------|----------|------|
-| Tier 1 | Hard targets | Stagehand + Browserbase | ~$50/mo |
-| Tier 2 | Medium/Easy | Playwright + Decodo | ~$50/mo |
-| **Total** | 20 stores | Hybrid | **~$100/mo** |
+### Methods to Implement
+1. **Quantity dropdown parsing** — Many sites show max quantity in dropdown (1-10 means 10+ in stock)
+2. **Add-to-cart probing** — Add max qty, check error for actual limit
+3. **API response analysis** — Some APIs return inventory counts directly
+4. **Cart manipulation** — Add item, check cart for quantity limits
 
 ---
 
@@ -107,4 +68,5 @@
 - `PROJECT.md` — This file
 - `findings/` — Research documents
 - `scrapers/` — Working extraction code
-- `stores/` — Store database and classification
+- `scrapers/inventory/` — Polling and change detection
+- `scrapers/monitoring/` — Alerting infrastructure

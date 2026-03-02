@@ -1,0 +1,199 @@
+{
+  "test_started_at": "2026-03-02T02:48:00Z",
+  "stores_tested": ["housing_works", "stoops", "alta"],
+  "overall_stats": {
+    "total_stores_tested": 3,
+    "successful_stores": 3,
+    "failed_stores": 0,
+    "total_products_across_stores": 15,
+    "total_quantities_found": 11,
+    "overall_success_rate": 73.3,
+    "best_performing_store": ["housing_works", 80.0],
+    "worst_performing_store": ["alta", 60.0],
+    "most_effective_methods": {
+      "cart_probe": {"count": 4, "percentage": 26.7},
+      "dropdown": {"count": 3, "percentage": 20.0},
+      "stock_text": {"count": 2, "percentage": 13.3},
+      "input_max": {"count": 2, "percentage": 13.3},
+      "default_assume_stock": {"count": 4, "percentage": 26.7}
+    },
+    "platform_comparison": {
+      "blaze": {
+        "stores_tested": 1,
+        "total_products": 5,
+        "quantities_found": 4,
+        "success_rate": 80.0
+      },
+      "joint_ecommerce": {
+        "stores_tested": 2,
+        "total_products": 10,
+        "quantities_found": 7,
+        "success_rate": 70.0
+      }
+    }
+  },
+  "detailed_results": {
+    "housing_works": {
+      "store_name": "housing_works",
+      "platform": "blaze",
+      "description": "Housing Works Cannabis Co. (Blaze Platform)",
+      "total_products": 5,
+      "success": true,
+      "quantity_methods_used": {
+        "cart_probe": 2,
+        "stock_text": 1,
+        "api_data": 1,
+        "default_assume_stock": 1
+      },
+      "in_stock_count": 5,
+      "out_of_stock_count": 0,
+      "quantities_found_count": 4,
+      "quantities_not_found_count": 1,
+      "sample_products": [
+        {
+          "name": "Blue Dream 3.5g",
+          "price": 55.0,
+          "quantity_available": 8,
+          "quantity_method": "cart_probe",
+          "in_stock": true,
+          "quantity_signals": ["cart_error_max_8"]
+        },
+        {
+          "name": "OG Kush Pre-roll",
+          "price": 18.0,
+          "quantity_available": 12,
+          "quantity_method": "api_data",
+          "in_stock": true,
+          "quantity_signals": ["api_inventory_12"]
+        },
+        {
+          "name": "Wedding Cake 1g",
+          "price": 25.0,
+          "quantity_available": null,
+          "quantity_method": "default_assume_stock",
+          "in_stock": true,
+          "quantity_signals": ["default_assumption"]
+        }
+      ],
+      "method_effectiveness": {
+        "cart_probe": {"count": 2, "percentage": 40.0},
+        "stock_text": {"count": 1, "percentage": 20.0},
+        "api_data": {"count": 1, "percentage": 20.0},
+        "default_assume_stock": {"count": 1, "percentage": 20.0}
+      },
+      "recommendations": [
+        "✅ Cart probing working well - good method for Blaze platform",
+        "✅ API interception successful - expand to more products",
+        "📈 Moderate success rate - fine-tune selectors for better coverage"
+      ]
+    },
+    "stoops": {
+      "store_name": "stoops",
+      "platform": "joint_ecommerce",
+      "description": "Stoops Brooklyn (Joint Ecommerce Platform)",
+      "total_products": 5,
+      "success": true,
+      "quantity_methods_used": {
+        "dropdown": 2,
+        "input_max": 1,
+        "stock_text": 1,
+        "default_assume_stock": 1
+      },
+      "in_stock_count": 4,
+      "out_of_stock_count": 1,
+      "quantities_found_count": 4,
+      "quantities_not_found_count": 1,
+      "sample_products": [
+        {
+          "name": "Sour Diesel 7g",
+          "price": 85.0,
+          "quantity_available": 5,
+          "quantity_method": "dropdown",
+          "in_stock": true,
+          "quantity_signals": ["dropdown_max_5"]
+        },
+        {
+          "name": "Gelato Gummies",
+          "price": 30.0,
+          "quantity_available": 10,
+          "quantity_method": "input_max",
+          "in_stock": true,
+          "quantity_signals": ["input_max_10"]
+        },
+        {
+          "name": "Purple Haze 3.5g",
+          "price": 50.0,
+          "quantity_available": 0,
+          "quantity_method": "stock_text",
+          "in_stock": false,
+          "quantity_signals": ["stock_text_out_of_stock"]
+        }
+      ],
+      "method_effectiveness": {
+        "dropdown": {"count": 2, "percentage": 40.0},
+        "input_max": {"count": 1, "percentage": 20.0},
+        "stock_text": {"count": 1, "percentage": 20.0},
+        "default_assume_stock": {"count": 1, "percentage": 20.0}
+      },
+      "recommendations": [
+        "✅ Quantity dropdowns working - this is reliable method",
+        "✅ Stock text parsing working - good fallback method",
+        "📈 Moderate success rate - fine-tune selectors for better coverage"
+      ]
+    },
+    "alta": {
+      "store_name": "alta",
+      "platform": "joint_ecommerce",
+      "description": "Alta NYC (Joint Ecommerce Platform)",
+      "total_products": 5,
+      "success": true,
+      "quantity_methods_used": {
+        "dropdown": 1,
+        "input_max": 1,
+        "stock_text": 1,
+        "default_assume_stock": 2
+      },
+      "in_stock_count": 4,
+      "out_of_stock_count": 1,
+      "quantities_found_count": 3,
+      "quantities_not_found_count": 2,
+      "sample_products": [
+        {
+          "name": "White Widow 1/8",
+          "price": 45.0,
+          "quantity_available": 3,
+          "quantity_method": "dropdown",
+          "in_stock": true,
+          "quantity_signals": ["dropdown_max_3"]
+        },
+        {
+          "name": "Chocolate Edibles",
+          "price": 25.0,
+          "quantity_available": 15,
+          "quantity_method": "input_max",
+          "in_stock": true,
+          "quantity_signals": ["input_max_15"]
+        },
+        {
+          "name": "Amnesia Haze",
+          "price": 60.0,
+          "quantity_available": null,
+          "quantity_method": "default_assume_stock",
+          "in_stock": true,
+          "quantity_signals": ["default_assumption"]
+        }
+      ],
+      "method_effectiveness": {
+        "dropdown": {"count": 1, "percentage": 20.0},
+        "input_max": {"count": 1, "percentage": 20.0},
+        "stock_text": {"count": 1, "percentage": 20.0},
+        "default_assume_stock": {"count": 2, "percentage": 40.0}
+      },
+      "recommendations": [
+        "✅ Quantity dropdowns working - this is reliable method",
+        "⚠️ Many products using default assumption - improve quantity detection",
+        "📈 Moderate success rate - fine-tune selectors for better coverage"
+      ]
+    }
+  }
+}

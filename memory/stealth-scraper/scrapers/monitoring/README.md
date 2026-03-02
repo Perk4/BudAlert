@@ -211,7 +211,7 @@ Edit `monitoring/alert_config.json`:
   "channels": {
     "webhook": {
       "enabled": true,
-      "url": "https://hooks.slack.com/services/YOUR/SLACK/WEBHOOK",
+      "url": "https://hooks.slack.com/services/YOUR/WEBHOOK/URL",
       "format": "slack"
     }
   },

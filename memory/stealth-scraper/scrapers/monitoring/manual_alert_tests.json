@@ -1,0 +1,242 @@
+{
+  "alert_test_scenarios": {
+    "scenario_a_price_drop": {
+      "name": "Price Drop Alert Test",
+      "description": "Product price drops from $50 to $40",
+      "steps": [
+        "1. Create initial inventory snapshot with Blue Dream at $50",
+        "2. Create new snapshot with Blue Dream at $40", 
+        "3. Run change detection",
+        "4. Verify price_change alert triggers",
+        "5. Check alert message contains old/new prices"
+      ],
+      "expected_result": "price_change alert with details: $50.00 → $40.00",
+      "test_data": {
+        "old_products": [
+          {
+            "id": "1",
+            "name": "Blue Dream 3.5g",
+            "price": 50.0,
+            "category": "flower",
+            "in_stock": true
+          }
+        ],
+        "new_products": [
+          {
+            "id": "1", 
+            "name": "Blue Dream 3.5g",
+            "price": 40.0,
+            "category": "flower",
+            "in_stock": true
+          }
+        ]
+      }
+    },
+    
+    "scenario_b_stock_out": {
+      "name": "Stock Out Alert Test",
+      "description": "Product goes from in_stock to out_of_stock",
+      "steps": [
+        "1. Create initial snapshot with OG Kush in stock",
+        "2. Create new snapshot with OG Kush out of stock",
+        "3. Run change detection",
+        "4. Verify stock_out alert triggers",
+        "5. Check alert message shows stock change"
+      ],
+      "expected_result": "stock_out alert for OG Kush",
+      "test_data": {
+        "old_products": [
+          {
+            "id": "2",
+            "name": "OG Kush 1g", 
+            "price": 20.0,
+            "category": "flower",
+            "in_stock": true
+          }
+        ],
+        "new_products": [
+          {
+            "id": "2",
+            "name": "OG Kush 1g",
+            "price": 20.0, 
+            "category": "flower",
+            "in_stock": false
+          }
+        ]
+      }
+    },
+    
+    "scenario_c_new_product": {
+      "name": "New Product Alert Test",
+      "description": "New product added to inventory", 
+      "steps": [
+        "1. Create initial empty snapshot",
+        "2. Create snapshot with new White Widow product",
+        "3. Run change detection", 
+        "4. Verify new_product alert triggers",
+        "5. Check alert contains product details"
+      ],
+      "expected_result": "new_product alert for White Widow",
+      "test_data": {
+        "old_products": [],
+        "new_products": [
+          {
+            "id": "3",
+            "name": "White Widow 7g",
+            "price": 80.0,
+            "category": "flower", 
+            "in_stock": true
+          }
+        ]
+      }
+    },
+    
+    "scenario_d_product_removed": {
+      "name": "Product Removed Alert Test",
+      "description": "Product removed from inventory",
+      "steps": [
+        "1. Create initial snapshot with Edible Gummies",
+        "2. Create empty snapshot", 
+        "3. Run change detection",
+        "4. Verify removed_product alert triggers",
+        "5. Check alert shows removed product"
+      ],
+      "expected_result": "removed_product alert for Edible Gummies",
+      "test_data": {
+        "old_products": [
+          {
+            "id": "4",
+            "name": "Edible Gummies 10mg",
+            "price": 15.0,
+            "category": "edibles",
+            "in_stock": true
+          }
+        ],
+        "new_products": []
+      }
+    },
+    
+    "scenario_e_consecutive_failures": {
+      "name": "Consecutive Scraper Failures Test",
+      "description": "3 consecutive scraper failures trigger alert",
+      "steps": [
+        "1. Mock 3 consecutive failed health checks",
+        "2. Run alert check cycle",
+        "3. Verify consecutive_failures alert triggers", 
+        "4. Check alert severity is 'critical'",
+        "5. Verify 30-minute cooldown applies"
+      ],
+      "expected_result": "consecutive_failures critical alert",
+      "mock_health_data": {
+        "consecutive_failures": 3,
+        "last_error": "Connection timeout",
+        "platform": "test"
+      }
+    },
+    
+    "scenario_f_low_success_rate": {
+      "name": "Low Success Rate Test", 
+      "description": "Success rate drops below 80%",
+      "steps": [
+        "1. Mock health data showing 20% success rate",
+        "2. Run alert check cycle",
+        "3. Verify low_success_rate alert triggers",
+        "4. Check alert includes success rate percentage", 
+        "5. Verify 60-minute cooldown applies"
+      ],
+      "expected_result": "low_success_rate warning alert",
+      "mock_metrics_data": {
+        "success_rate_24h": 20.0,
+        "threshold": 80.0
+      }
+    }
+  },
+  
+  "suppression_tests": {
+    "minor_price_change": {
+      "name": "Minor Price Change (Should NOT Alert)",
+      "description": "Price change of $0.01 should be suppressed",
+      "price_change_threshold": 0.01,
+      "test_data": {
+        "old_price": 50.00,
+        "new_price": 50.01
+      },
+      "expected_result": "NO alert (below threshold)"
+    },
+    
+    "no_change": {
+      "name": "No Changes (Should NOT Alert)", 
+      "description": "Identical product data should not trigger alerts",
+      "expected_result": "NO alerts generated"
+    },
+    
+    "temporary_recovery": {
+      "name": "Temporary Error Recovery (Should NOT Alert)",
+      "description": "Single failure followed by recovery should not alert",
+      "expected_result": "NO consecutive_failures alert (< 3 failures)"
+    }
+  },
+  
+  "webhook_integration": {
+    "name": "Webhook Integration Test",
+    "description": "Test webhook delivery to external endpoints",
+    "test_endpoints": [
+      {
+        "name": "webhook.site",
+        "url_pattern": "https://webhook.site/{uuid}",
+        "format": "slack"
+      },
+      {
+        "name": "requestbin", 
+        "url_pattern": "https://requestbin.io/{uuid}",
+        "format": "discord"
+      }
+    ],
+    "payload_formats": {
+      "slack": {
+        "attachments": [
+          {
+            "color": "#ff0000",
+            "title": "Stealth Scraper Alert - CRITICAL",
+            "text": "test_store has 3 consecutive failures",
+            "fields": [
+              {"title": "Store", "value": "test_store", "short": true},
+              {"title": "Type", "value": "consecutive_failures", "short": true}
+            ]
+          }
+        ]
+      },
+      "discord": {
+        "embeds": [
+          {
+            "title": "Stealth Scraper Alert",
+            "description": "test_store has 3 consecutive failures", 
+            "color": 16711680,
+            "fields": [
+              {"name": "Store", "value": "test_store", "inline": true},
+              {"name": "Severity", "value": "CRITICAL", "inline": true}
+            ]
+          }
+        ]
+      }
+    }
+  },
+  
+  "cooldown_tests": {
+    "name": "Alert Cooldown Verification",
+    "description": "Verify cooldown periods prevent spam alerts",
+    "cooldown_periods": {
+      "consecutive_failures": 30,
+      "success_rate": 60, 
+      "no_extraction": 120,
+      "product_drop": 60
+    },
+    "test_steps": [
+      "1. Trigger alert of specific type",
+      "2. Immediately trigger same alert condition again",
+      "3. Verify second alert is suppressed", 
+      "4. Wait for cooldown period to expire",
+      "5. Trigger alert again and verify it fires"
+    ]
+  }
+}

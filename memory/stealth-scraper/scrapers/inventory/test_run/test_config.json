@@ -1,0 +1,52 @@
+{
+  "test_name": "Live Polling Validation - 24 Hour Test",
+  "test_duration_minutes": 60,
+  "polling_interval_seconds": 300,
+  "start_time": null,
+  "stores": {
+    "smacked_village": {
+      "platform": "custom-easy",
+      "priority": "high",
+      "baseline_file": "smacked_village_baseline.json",
+      "expected_products": 30,
+      "test_changes": [
+        {
+          "type": "price_change",
+          "product_id": "smacked_001",
+          "old_price": 25.0,
+          "new_price": 23.0
+        },
+        {
+          "type": "stock_out", 
+          "product_id": "smacked_002"
+        }
+      ]
+    },
+    "alta": {
+      "platform": "joint-ecommerce",
+      "priority": "high", 
+      "baseline_file": "alta_baseline.json",
+      "expected_products": 50,
+      "test_changes": [
+        {
+          "type": "new_product",
+          "product_name": "TEST Alta New Product"
+        }
+      ]
+    },
+    "happy_munkey": {
+      "platform": "custom-easy",
+      "priority": "medium",
+      "baseline_file": "happy_munkey_baseline.json", 
+      "expected_products": 35,
+      "test_changes": [
+        {
+          "type": "price_change",
+          "product_id": "hm_001",
+          "old_price": 44.0,
+          "new_price": 42.0
+        }
+      ]
+    }
+  }
+}

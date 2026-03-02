@@ -1,0 +1,135 @@
+{
+  "timestamp": "2026-03-02T02:49:35.233Z",
+  "duration_ms": 787,
+  "summary": {
+    "total_tests": 9,
+    "passed_tests": 7,
+    "failed_tests": 2,
+    "success_rate": 77.77777777777779
+  },
+  "results": [
+    {
+      "scenario_name": "Price Drop Alert Test",
+      "changes_detected": 1,
+      "changes": [
+        {
+          "type": "price_change",
+          "product_id": "1",
+          "product_name": "Blue Dream 3.5g",
+          "old_price": 50,
+          "new_price": 40,
+          "price_change": -10
+        }
+      ],
+      "success": true
+    },
+    {
+      "scenario_name": "Stock Out Alert Test",
+      "changes_detected": 1,
+      "changes": [
+        {
+          "type": "stock_out",
+          "product_id": "2",
+          "product_name": "OG Kush 1g",
+          "old_stock": true,
+          "new_stock": false
+        }
+      ],
+      "success": true
+    },
+    {
+      "scenario_name": "New Product Alert Test",
+      "changes_detected": 1,
+      "changes": [
+        {
+          "type": "new_product",
+          "product_id": "3",
+          "product_name": "White Widow 7g",
+          "price": 80
+        }
+      ],
+      "success": true
+    },
+    {
+      "scenario_name": "Product Removed Alert Test",
+      "changes_detected": 1,
+      "changes": [
+        {
+          "type": "removed_product",
+          "product_id": "4",
+          "product_name": "Edible Gummies 10mg",
+          "old_price": 15
+        }
+      ],
+      "success": true
+    },
+    {
+      "scenario_name": "Consecutive Scraper Failures Test",
+      "changes_detected": 0,
+      "changes": [],
+      "success": false
+    },
+    {
+      "scenario_name": "Low Success Rate Test",
+      "changes_detected": 0,
+      "changes": [],
+      "success": false
+    },
+    {
+      "scenario_name": "Webhook Integration Test",
+      "success": true,
+      "webhook_url": "https://webhook.site/ec9b1936-ddb8-4639-9d75-b0242461f054",
+      "payload": {
+        "attachments": [
+          {
+            "color": "#ff0000",
+            "title": "Stealth Scraper Alert - CRITICAL",
+            "text": "test_store has 3 consecutive failures",
+            "fields": [
+              {
+                "title": "Store",
+                "value": "test_store",
+                "short": true
+              },
+              {
+                "title": "Type",
+                "value": "consecutive_failures",
+                "short": true
+              },
+              {
+                "title": "Time",
+                "value": "Mon, 02 Mar 2026 02:49:35 GMT",
+                "short": false
+              }
+            ],
+            "footer": "Stealth Scraper Monitoring",
+            "ts": 1772419775
+          }
+        ]
+      }
+    },
+    {
+      "scenario_name": "Alert Suppression Test",
+      "success": true,
+      "suppression_results": [
+        {
+          "name": "Minor Price Change",
+          "passed": true,
+          "expected": false,
+          "actual": false
+        },
+        {
+          "name": "Significant Price Change",
+          "passed": true,
+          "expected": true,
+          "actual": true
+        }
+      ]
+    },
+    {
+      "scenario_name": "Console Alert Test",
+      "success": true,
+      "output": "Console alert displayed"
+    }
+  ]
+}
