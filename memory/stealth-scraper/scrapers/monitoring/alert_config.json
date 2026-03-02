@@ -1,0 +1,34 @@
+{
+  "channels": {
+    "console": {
+      "enabled": true
+    },
+    "webhook": {
+      "enabled": false,
+      "url": "",
+      "format": "slack"
+    },
+    "email": {
+      "enabled": false,
+      "smtp_server": "smtp.gmail.com",
+      "smtp_port": 587,
+      "username": "",
+      "password": "",
+      "from_email": "",
+      "to_emails": []
+    }
+  },
+  "thresholds": {
+    "consecutive_failure_limit": 3,
+    "success_rate_warning": 80,
+    "success_rate_critical": 50,
+    "max_hours_without_success": 6,
+    "product_count_drop_percentage": 50
+  },
+  "cooldowns": {
+    "consecutive_failures": 30,
+    "success_rate": 60,
+    "no_extraction": 120,
+    "product_drop": 60
+  }
+}

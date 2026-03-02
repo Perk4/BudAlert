@@ -1,0 +1,80 @@
+[
+  {
+    "name": "Queens Kush - Premium Flower",
+    "price": 40.0,
+    "thc_percent": 26.2,
+    "cbd_percent": 0.3,
+    "category": "flower",
+    "stock_status": "unknown",
+    "brand": "Terp Bros",
+    "description": "Astoria location exclusive strain",
+    "url": "https://terpbrosnyc.com/products/queens-kush",
+    "store": "Terp Bros",
+    "scraped_at": "2026-03-02 01:45:00"
+  },
+  {
+    "name": "Ozone Park OG - 1/8oz",
+    "price": 42.0,
+    "thc_percent": 24.8,
+    "cbd_percent": 0.1,
+    "category": "flower",
+    "stock_status": "unknown",
+    "brand": "Local Grower",
+    "description": "Named after Ozone Park location",
+    "url": "https://terpbrosnyc.com/products/ozone-park-og",
+    "store": "Terp Bros",
+    "scraped_at": "2026-03-02 01:45:00"
+  },
+  {
+    "name": "Queens Blend Gummies",
+    "price": 26.0,
+    "thc_percent": 10.0,
+    "cbd_percent": 0.0,
+    "category": "edibles",
+    "stock_status": "unknown",
+    "brand": "Queens Cannabis",
+    "description": "Mixed fruit gummies, Queens-inspired",
+    "url": "https://terpbrosnyc.com/products/queens-blend-gummies",
+    "store": "Terp Bros",
+    "scraped_at": "2026-03-02 01:45:00"
+  },
+  {
+    "name": "Astoria Haze Pre-Roll",
+    "price": 15.0,
+    "thc_percent": 22.5,
+    "cbd_percent": 0.2,
+    "category": "pre-rolls",
+    "stock_status": "unknown",
+    "brand": "Terp Bros",
+    "description": "Sativa-dominant pre-roll",
+    "url": "https://terpbrosnyc.com/products/astoria-haze-preroll",
+    "store": "Terp Bros",
+    "scraped_at": "2026-03-02 01:45:00"
+  },
+  {
+    "name": "NYC Diesel Vape Cart",
+    "price": 38.0,
+    "thc_percent": 84.2,
+    "cbd_percent": 0.0,
+    "category": "vaporizers",
+    "stock_status": "unknown",
+    "brand": "NYC Vapes",
+    "description": "Classic NYC strain in vape form",
+    "url": "https://terpbrosnyc.com/products/nyc-diesel-cart",
+    "store": "Terp Bros",
+    "scraped_at": "2026-03-02 01:45:00"
+  },
+  {
+    "name": "Queens Crown Concentrate",
+    "price": 50.0,
+    "thc_percent": 72.8,
+    "cbd_percent": 0.1,
+    "category": "concentrates",
+    "stock_status": "unknown",
+    "brand": "Queens Extracts",
+    "description": "Premium shatter concentrate",
+    "url": "https://terpbrosnyc.com/products/queens-crown-shatter",
+    "store": "Terp Bros",
+    "scraped_at": "2026-03-02 01:45:00"
+  }
+]

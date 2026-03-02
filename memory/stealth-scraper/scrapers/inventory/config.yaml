@@ -1,0 +1,238 @@
+# Inventory Polling Configuration
+# Tiered polling schedules for all dispensary stores
+
+stores:
+  # HIGH-VALUE STORES (Every 15 minutes)
+  housing_works:
+    platform: blaze
+    priority: high
+    interval_minutes: 15
+    enabled: true
+    max_retries: 3
+    timeout: 60
+    url: https://housingworks.com/shop
+    description: "Housing Works Cannabis Co. - High-volume Blaze platform store"
+    
+  stoops:
+    platform: joint_ecommerce
+    priority: high
+    interval_minutes: 15
+    enabled: true
+    max_retries: 3
+    timeout: 60
+    url: https://stoopsbrooklyn.com
+    description: "Stoops - Brooklyn Joint Ecommerce store"
+
+  # MEDIUM PRIORITY STORES (Every 1 hour)
+  conbud:
+    platform: dutchie_embed
+    priority: medium
+    interval_minutes: 60
+    enabled: true
+    max_retries: 2
+    timeout: 45
+    url: https://conbudnyc.com
+    description: "CONBUD - Dutchie embed platform"
+    
+  torches:
+    platform: joint_ecommerce
+    priority: medium
+    interval_minutes: 60
+    enabled: true
+    max_retries: 2
+    timeout: 45
+    url: https://torchesnyc.com
+    description: "Torches NYC - Joint Ecommerce platform"
+    
+  alta:
+    platform: joint_ecommerce
+    priority: medium
+    interval_minutes: 60
+    enabled: true
+    max_retries: 2
+    timeout: 45
+    url: https://alta.nyc
+    description: "Alta - Joint Ecommerce platform"
+
+  # EASY CUSTOM SITES (Every 4 hours)
+  smacked_village:
+    platform: custom
+    priority: low
+    interval_minutes: 240
+    enabled: true
+    max_retries: 1
+    timeout: 30
+    url: https://getsmacked.online
+    description: "Smacked Village - Custom site"
+    
+  yerba_buena:
+    platform: custom
+    priority: low
+    interval_minutes: 240
+    enabled: true
+    max_retries: 1
+    timeout: 30
+    url: https://yerbabuena.nyc
+    description: "Yerba Buena - Custom site"
+    
+  terp_bros:
+    platform: custom
+    priority: low
+    interval_minutes: 240
+    enabled: true
+    max_retries: 1
+    timeout: 30
+    url: https://terpbrosnyc.com
+    description: "Terp Bros NYC - Custom site"
+    
+  flynnstoned:
+    platform: custom
+    priority: low
+    interval_minutes: 240
+    enabled: true
+    max_retries: 1
+    timeout: 30
+    url: https://flynnstoned.com
+    description: "FlynnStoned - Custom site"
+    
+  happy_munkey:
+    platform: custom
+    priority: low
+    interval_minutes: 240
+    enabled: true
+    max_retries: 1
+    timeout: 30
+    url: https://happymunkey.com
+    description: "Happy Munkey - Custom site"
+
+  # MEDIUM CUSTOM SITES (Every 2 hours)
+  travel_agency:
+    platform: custom
+    priority: medium
+    interval_minutes: 120
+    enabled: true
+    max_retries: 2
+    timeout: 45
+    url: https://thetravelagency.co
+    description: "The Travel Agency - Remix/React site"
+    
+  gotham:
+    platform: custom
+    priority: medium
+    interval_minutes: 120
+    enabled: true
+    max_retries: 2
+    timeout: 45
+    url: https://gotham.nyc
+    description: "Gotham NYC - Custom site"
+    
+  dazed_cannabis:
+    platform: custom
+    priority: medium
+    interval_minutes: 120
+    enabled: true
+    max_retries: 2
+    timeout: 45
+    url: https://dazed.fun
+    description: "Dazed Cannabis - Custom site"
+    
+  green_apple:
+    platform: custom
+    priority: medium
+    interval_minutes: 120
+    enabled: true
+    max_retries: 2
+    timeout: 45
+    url: https://greenapple.nyc
+    description: "Green Apple - Custom site"
+    
+  chelsea_cannabis:
+    platform: custom
+    priority: medium
+    interval_minutes: 120
+    enabled: true
+    max_retries: 2
+    timeout: 45
+    url: https://chelseacannabis.co
+    description: "Chelsea Cannabis Co. - Custom site"
+    
+  verilife:
+    platform: custom
+    priority: medium
+    interval_minutes: 120
+    enabled: true
+    max_retries: 2
+    timeout: 45
+    url: https://verilife.com/ny
+    description: "Verilife - MSO custom site"
+
+  # NEW PLATFORMS (Every 2 hours)
+  qube_nyc:
+    platform: leafbridge
+    priority: medium
+    interval_minutes: 120
+    enabled: true
+    max_retries: 2
+    timeout: 45
+    url: https://qubenyc.com
+    description: "QUBE NYC - LeafBridge platform"
+
+  # HARD TARGETS (Every 4 hours - high resource cost)
+  rise_manhattan:
+    platform: jane
+    priority: low
+    interval_minutes: 240
+    enabled: false  # Disabled until Cloudflare bypass working
+    max_retries: 1
+    timeout: 90
+    url: https://risecannabis.com
+    description: "RISE Manhattan - Jane + Cloudflare protection"
+    
+  curaleaf_nyc:
+    platform: mso
+    priority: low
+    interval_minutes: 240
+    enabled: false  # Disabled until MSO scraper ready
+    max_retries: 1
+    timeout: 90
+    url: https://curaleaf.com
+    description: "Curaleaf NYC - MSO + Cloudflare protection"
+
+# Global scheduler settings
+global_settings:
+  # Maximum number of concurrent scrapers running
+  max_concurrent_scrapers: 3
+  
+  # Default delay between starting scrapers (seconds)
+  default_delay_between_stores: 5
+  
+  # How often to save state (seconds)
+  state_save_interval: 300
+  
+  # How long to keep old extraction data (days)
+  cleanup_old_data_days: 30
+  
+  # Error handling
+  max_consecutive_failures: 5  # Disable store after this many failures
+  backoff_multiplier: 2  # Multiply interval by this on error
+  max_backoff_minutes: 1440  # Maximum backoff (24 hours)
+  
+  # Resource limits
+  max_memory_mb: 1024  # Kill scraper if it uses more memory
+  max_runtime_minutes: 10  # Kill scraper if it runs longer
+  
+# Alert settings
+alerts:
+  enabled: true
+  
+  # Alert thresholds
+  price_drop_threshold: 5.0  # Alert if price drops by this much ($)
+  new_product_alert: true  # Alert when new products appear
+  stock_alert: true  # Alert when items come back in stock
+  
+  # Notification channels
+  channels:
+    email: false
+    discord: false
+    slack: false
+    webhook: false

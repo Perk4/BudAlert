@@ -1,0 +1,54 @@
+[
+  {
+    "name": "Afternoon Delight #4 | Smalls",
+    "brand": "Rythm",
+    "category": "FLOWER",
+    "price": "$80.00",
+    "size": "1/4oz",
+    "thc": "21%",
+    "cbd": "0.05%",
+    "classification": "HYBRID",
+    "stock_status": "in_stock",
+    "image": "https://images.dutchie.com/288309024a4dde538f801bfbf4cb7da3",
+    "url": "https://thetravelagency.co/products/rythm-afternoon-delight-4-smalls-for-sale-new-york-ny/"
+  },
+  {
+    "name": "Maui Wowie | Liquid Diamonds | All-in-one",
+    "brand": "Rythm",
+    "category": "VAPORIZERS",
+    "price": "$65.00",
+    "size": "1g",
+    "thc": "91.28%",
+    "cbd": "",
+    "classification": "SATIVA",
+    "stock_status": "in_stock",
+    "image": "https://images.dutchie.com/93c34aa3d94ad8fd1e1f0a7c3853a541",
+    "url": "https://thetravelagency.co/products/rythm-maui-wowie-liquid-diamonds-all-in-one-for-sale-new-york-ny/"
+  },
+  {
+    "name": "Animal Scout",
+    "brand": "Rythm",
+    "category": "FLOWER",
+    "price": "$50.00",
+    "size": "1/8oz",
+    "thc": "34.8%",
+    "cbd": "",
+    "classification": "INDICA HYBRID",
+    "stock_status": "in_stock",
+    "image": "https://images.dutchie.com/7f316f10ff4ed283815735f33964abc9",
+    "url": "https://thetravelagency.co/products/rythm-animal-scout-for-sale-new-york-ny/"
+  },
+  {
+    "name": "Dulce De Uva",
+    "brand": "Rythm",
+    "category": "FLOWER",
+    "price": "$150.00",
+    "size": "1/2oz",
+    "thc": "26.99%",
+    "cbd": "",
+    "classification": "INDICA HYBRID",
+    "stock_status": "in_stock",
+    "image": "https://images.dutchie.com/6d741084247b6992f89c56caa8b56bca",
+    "url": "https://thetravelagency.co/products/rythm-dulce-de-uva-for-sale-new-york-ny/"
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Product data requires JS rendering",
+    "brand": "Various",
+    "category": "Unknown",
+    "price": "Price not available",
+    "size": "",
+    "thc": "",
+    "cbd": "",
+    "classification": "",
+    "stock_status": "unknown",
+    "image": "",
+    "url": "https://gotham.nyc/menu",
+    "notes": "WordPress with Dovetail plugin - products likely loaded via AJAX"
+  }
+]

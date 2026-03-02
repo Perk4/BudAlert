@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Chelsea Cannabis Product",
+    "brand": "Chelsea Cannabis Co.",
+    "category": "Unknown",
+    "price": "Price not available",
+    "size": "",
+    "thc": "",
+    "cbd": "",
+    "classification": "",
+    "stock_status": "unknown",
+    "image": "",
+    "url": "https://chelseacannabis.co",
+    "notes": "Ruby on Rails application - requires CSRF token handling and potential session management"
+  }
+]
