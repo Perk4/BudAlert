@@ -1,0 +1,92 @@
+[
+  {
+    "entity_name": "Gotham Buds",
+    "website": "https://gothambudsny.com",
+    "menuUrl": "https://gothambudsny.com/shop",
+    "menuProvider": "dutchie",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /shop"
+  },
+  {
+    "entity_name": "Gotham CAURD LLC",
+    "website": "https://gotham.nyc/",
+    "menuUrl": "https://gotham.nyc/cannabis",
+    "menuProvider": null,
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Error: html.toLowerCase is not a function"
+  },
+  {
+    "entity_name": "The Flowery Staten Island",
+    "website": "https://thefloweryny.com/",
+    "menuUrl": "https://thefloweryny.com/menu",
+    "menuProvider": "unknown",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /menu"
+  },
+  {
+    "entity_name": "Devil's Lettuce",
+    "website": "https://devilslettuce.net",
+    "menuUrl": "https://devilslettuce.net/shop",
+    "menuProvider": "unknown",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /shop"
+  },
+  {
+    "entity_name": "Curaleaf Plattsburgh",
+    "website": "https://curaleaf.com",
+    "menuUrl": "https://curaleaf.com/menu",
+    "menuProvider": "unknown",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /menu"
+  },
+  {
+    "entity_name": "Alta Dispensary",
+    "website": "https://altadispensary.nyc",
+    "menuUrl": "https://altadispensary.nyc/shop",
+    "menuProvider": "unknown",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /shop"
+  },
+  {
+    "entity_name": "Cotton Mouth Dispensary",
+    "website": "https://cottonmouth-dispensary.com",
+    "menuUrl": "https://cottonmouth-dispensary.com/cannabis",
+    "menuProvider": null,
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Error: html.toLowerCase is not a function"
+  },
+  {
+    "entity_name": "Dansville Dispesnary",
+    "website": "https://dansvilledispensary.com",
+    "menuUrl": "https://dansvilledispensary.com/store",
+    "menuProvider": "unknown",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /store"
+  },
+  {
+    "entity_name": "Leaf & Fog Dispensary",
+    "website": "https://leafandfog.com/",
+    "menuUrl": "https://leafandfog.com/menu",
+    "menuProvider": "unknown",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /menu"
+  },
+  {
+    "entity_name": "Stonedhouse Dispensary",
+    "website": "https://stonedhouseny.com",
+    "menuUrl": "https://stonedhouseny.com/menu",
+    "menuProvider": "unknown",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /menu"
+  }
+]

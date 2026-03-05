@@ -1,0 +1,102 @@
+[
+  {
+    "entity_name": "Gotham Buds",
+    "address": "248 W 125th St",
+    "city": "New York",
+    "zip_code": "10027",
+    "website": "https://gothambudsny.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Gotham CAURD LLC",
+    "address": "3 E 3rd St",
+    "city": "New York",
+    "zip_code": "10003",
+    "website": "https://gotham.nyc/",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "The Flowery Staten Island",
+    "address": "3022 Veterans Rd W",
+    "city": "Staten Island",
+    "zip_code": "10309",
+    "website": "https://thefloweryny.com/",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Devil's Lettuce",
+    "address": "650 Orchard Park Rd",
+    "city": "West Seneca",
+    "zip_code": "14224",
+    "website": "https://devilslettuce.net",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Curaleaf Plattsburgh",
+    "address": "345 Cornelia St",
+    "city": "Plattsburgh",
+    "zip_code": "12901",
+    "website": "https://curaleaf.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Alta Dispensary",
+    "address": "52 A Kenmare St",
+    "city": "New York",
+    "zip_code": "10012",
+    "website": "https://altadispensary.nyc",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Cotton Mouth Dispensary",
+    "address": "439 Court St",
+    "city": "Binghamton",
+    "zip_code": "13904",
+    "website": "https://cottonmouth-dispensary.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Dansville Dispesnary",
+    "address": "9483 Wheeler Foster Rd, Suite C",
+    "city": "Dansville",
+    "zip_code": "14437",
+    "website": "https://dansvilledispensary.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Leaf & Fog Dispensary",
+    "address": "2124 Doubleday Ave #2",
+    "city": "Ballston Spa",
+    "zip_code": "12020",
+    "website": "https://leafandfog.com/",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Stonedhouse Dispensary",
+    "address": "755 Center St, Unit 7",
+    "city": "Lewiston",
+    "zip_code": "14092",
+    "website": "https://stonedhouseny.com",
+    "is_microbusiness": true,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  }
+]
