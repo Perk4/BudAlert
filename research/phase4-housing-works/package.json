@@ -1,0 +1,19 @@
+{
+  "name": "housing-works-scraper",
+  "version": "1.0.0",
+  "description": "Scraper for Housing Works Cannabis Co. (Blaze platform)",
+  "main": "scraper-playwright.js",
+  "scripts": {
+    "scrape": "node scraper-playwright.js",
+    "scrape:api": "node scraper-api-direct.js",
+    "discover": "node scraper-api-direct.js discover",
+    "test": "node test-scraper.js"
+  },
+  "dependencies": {
+    "playwright": "^1.40.0",
+    "axios": "^1.6.0"
+  },
+  "keywords": ["scraper", "blaze", "dispensary", "cannabis", "housing-works"],
+  "author": "BudAlert",
+  "license": "MIT"
+}

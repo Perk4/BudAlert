@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  housing-works-scraper:
+    build: .
+    container_name: housing-works-scraper
+    volumes:
+      - ./output:/app/output
+      - ./scraper-playwright.js:/app/scraper-playwright.js
+      - ./scraper-api-direct.js:/app/scraper-api-direct.js
+    environment:
+      - PLAYWRIGHT_BROWSERS_PATH=/app/.cache
+      - NODE_ENV=production
+    stdin_open: true
+    tty: true
+    network_mode: bridge
+    mem_limit: 2g
+    cpus: 2.0
