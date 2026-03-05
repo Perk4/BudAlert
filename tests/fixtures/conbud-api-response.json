@@ -1,0 +1,102 @@
+{
+  "data": {
+    "filteredProducts": {
+      "products": [
+        {
+          "id": "prod_123",
+          "name": "Gorilla Glue #4",
+          "brand": {
+            "id": "brand_1",
+            "name": "Premium Cannabis Co."
+          },
+          "category": "FLOWER",
+          "subcategory": "Indica",
+          "description": "Heavy-hitting indica strain",
+          "potencyThc": {
+            "formatted": "25.5%",
+            "range": [25.5, 26.0]
+          },
+          "potencyCbd": {
+            "formatted": "0.1%",
+            "range": [0.1, 0.2]
+          },
+          "price": 55.00,
+          "variants": [
+            {
+              "id": "var_1",
+              "option": "3.5g",
+              "price": 55.00,
+              "specialPrice": null
+            },
+            {
+              "id": "var_2",
+              "option": "7g",
+              "price": 100.00,
+              "specialPrice": 90.00
+            }
+          ],
+          "image": "https://images.dutchie.com/gorilla-glue.jpg",
+          "images": [
+            "https://images.dutchie.com/gorilla-glue.jpg",
+            "https://images.dutchie.com/gorilla-glue-2.jpg"
+          ],
+          "inStock": true,
+          "quantity": 25,
+          "effects": ["Relaxed", "Sleepy", "Happy"],
+          "terpenes": [
+            {
+              "name": "Caryophyllene",
+              "value": 1.2
+            }
+          ]
+        },
+        {
+          "id": "prod_456",
+          "name": "Sour Diesel Vape Cart",
+          "brand": {
+            "id": "brand_2",
+            "name": "Vape Masters"
+          },
+          "category": "VAPORIZERS",
+          "subcategory": "Cartridge",
+          "potencyThc": {
+            "formatted": "85%",
+            "range": [85, 87]
+          },
+          "price": 45.00,
+          "variants": [
+            {
+              "id": "var_3",
+              "option": "1g",
+              "price": 45.00
+            }
+          ],
+          "image": "https://images.dutchie.com/sour-diesel-cart.jpg",
+          "inStock": true,
+          "quantity": 10
+        },
+        {
+          "id": "prod_789",
+          "name": "Blue Dream Pre-Roll Pack",
+          "brand": {
+            "id": "brand_1",
+            "name": "Premium Cannabis Co."
+          },
+          "category": "PREROLLS",
+          "potencyThc": {
+            "formatted": "22%",
+            "range": [22, 23]
+          },
+          "price": 15.00,
+          "variants": [],
+          "inStock": false,
+          "quantity": 0
+        }
+      ],
+      "pageInfo": {
+        "hasNextPage": false,
+        "endCursor": "cursor123"
+      }
+    }
+  }
+}

@@ -239,9 +239,7 @@ export function buildFilters(options = {}) {
   const filters = {};
   
   if (options.category) {
-    filters.category = Array.isArray(options.category) 
-      ? options.category 
-      : [options.category];
+    filters.category = options.category;
   }
   
   if (options.subcategory) {
@@ -262,10 +260,10 @@ export function buildFilters(options = {}) {
       : [options.brand];
   }
   
-  if (options.priceMin !== undefined || options.priceMax !== undefined) {
-    filters.price = {
-      min: options.priceMin,
-      max: options.priceMax
+  if (options.minPrice !== undefined || options.maxPrice !== undefined) {
+    filters.priceRange = {
+      min: options.minPrice,
+      max: options.maxPrice
     };
   }
   
@@ -273,7 +271,7 @@ export function buildFilters(options = {}) {
     filters.inStock = true;
   }
   
-  return Object.keys(filters).length > 0 ? filters : null;
+  return filters;
 }
 
 /**
@@ -307,12 +305,20 @@ export function extractQueryInfo(graphqlRequest) {
  * Normalize product data from various query responses
  */
 export function normalizeProduct(product, source = 'conbud-les') {
+  if (!product || !product.name) {
+    return null;
+  }
+  
   try {
+    const brandName = product.brand?.name || product.brandName || product.brand || null;
+    const brandId = product.brand?.id || null;
+    
     return {
       // Basic info
       id: product.id || product._id || product.productId,
       name: product.name || product.Name,
-      brand: product.brand?.name || product.brandName || product.brand,
+      brand: brandName,
+      brandId: brandId,
       category: product.category || product.type,
       subcategory: product.subcategory || product.subtype,
       
@@ -324,10 +330,20 @@ export function normalizeProduct(product, source = 'conbud-les') {
       },
       
       // Potency
-      thc: product.potencyThc?.formatted || product.THCContent?.formatted || product.thc || null,
-      thcPercent: product.potencyThc?.range?.[0] || product.THCContent?.range?.[0] || null,
-      cbd: product.potencyCbd?.formatted || product.CBDContent?.formatted || product.cbd || null,
-      cbdPercent: product.potencyCbd?.range?.[0] || product.CBDContent?.range?.[0] || null,
+      thc: product.potencyThc ? {
+        formatted: product.potencyThc.formatted,
+        value: product.potencyThc.range?.[0] || null
+      } : (product.THCContent ? {
+        formatted: product.THCContent.formatted,
+        value: product.THCContent.range?.[0] || null
+      } : null),
+      cbd: product.potencyCbd ? {
+        formatted: product.potencyCbd.formatted,
+        value: product.potencyCbd.range?.[0] || null
+      } : (product.CBDContent ? {
+        formatted: product.CBDContent.formatted,
+        value: product.CBDContent.range?.[0] || null
+      } : null),
       
       // Media
       image: product.image || product.imageUrl || product.images?.[0],
@@ -335,7 +351,7 @@ export function normalizeProduct(product, source = 'conbud-les') {
       
       // Inventory
       inStock: product.inStock !== false,
-      inventoryCount: product.quantity || product.POSMetaData?.quantity || null,
+      quantity: product.quantity !== undefined ? product.quantity : (product.POSMetaData?.quantity || null),
       
       // Metadata
       strainType: product.strainType || product.strain,
