@@ -1,0 +1,49 @@
+# Dockerfile.browser - Full browser automation scraper base
+# Optimized for: Gotham browser mode, Conbud browser mode
+# Base image size: ~1.2-1.5 GB
+# Includes: Chromium browser + Playwright + Node.js
+
+FROM mcr.microsoft.com/playwright:v1.40.0-jammy AS base
+
+# Install Node.js 20 (Playwright image comes with older Node)
+RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash - && \
+    apt-get update && \
+    apt-get install -y nodejs && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
+
+# Create app directory
+WORKDIR /app
+
+# Install production dependencies first (better layer caching)
+COPY package*.json ./
+RUN npm ci --only=production --ignore-scripts && \
+    npm cache clean --force
+
+# Install Playwright Chromium browser
+RUN npx playwright install chromium && \
+    npx playwright install-deps chromium
+
+# Copy application code
+COPY . .
+
+# Create non-root user for security
+# Note: Playwright needs access to browser binaries
+RUN groupadd -g 1001 scraper && \
+    useradd -r -u 1001 -g scraper scraper && \
+    chown -R scraper:scraper /app && \
+    chmod -R 755 /app
+
+# Switch to non-root user
+USER scraper
+
+# Set Playwright environment variables
+ENV PLAYWRIGHT_BROWSERS_PATH=/ms-playwright
+ENV PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD=1
+
+# Health check (verify browser can launch)
+HEALTHCHECK --interval=60s --timeout=30s --start-period=15s --retries=3 \
+  CMD node -e "import('playwright').then(({ chromium }) => chromium.launch().then(b => b.close())).catch(() => process.exit(1))" || exit 1
+
+# Default command (override in docker-compose or per-scraper Dockerfile)
+CMD ["node", "scraper.mjs"]

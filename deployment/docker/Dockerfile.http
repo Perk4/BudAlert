@@ -1,0 +1,34 @@
+# Dockerfile.http - Lightweight HTTP-only scraper base
+# Optimized for: Housing Works, Conbud API mode, Gotham HTTP mode
+# Base image size: ~150-200 MB
+
+FROM node:20-alpine AS base
+
+# Install security updates
+RUN apk upgrade --no-cache
+
+# Create app directory
+WORKDIR /app
+
+# Install production dependencies first (better layer caching)
+COPY package*.json ./
+RUN npm ci --only=production --ignore-scripts && \
+    npm cache clean --force
+
+# Copy application code
+COPY . .
+
+# Create non-root user for security
+RUN addgroup -g 1001 -S scraper && \
+    adduser -S -D -H -u 1001 -h /app -s /sbin/nologin -G scraper -g scraper scraper && \
+    chown -R scraper:scraper /app
+
+# Switch to non-root user
+USER scraper
+
+# Health check
+HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
+  CMD node -e "console.log('healthy')" || exit 1
+
+# Default command (override in docker-compose or per-scraper Dockerfile)
+CMD ["node", "scraper.mjs"]

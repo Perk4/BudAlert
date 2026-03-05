@@ -1,0 +1,54 @@
+# .dockerignore - Exclude unnecessary files from Docker builds
+
+# Node
+node_modules
+npm-debug.log
+yarn-error.log
+package-lock.json
+
+# Output files
+*.json
+!package.json
+*.csv
+*.xlsx
+
+# Debug files
+debug-*.html
+*.log
+
+# Git
+.git
+.gitignore
+.gitattributes
+
+# Documentation (not needed in container)
+*.md
+!README.md
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Test files
+test-*.mjs
+*.test.mjs
+__tests__
+
+# Environment files (use Docker secrets/env instead)
+.env
+.env.*
+
+# Build artifacts
+dist
+build
+.cache
+
+# Deployment configs (not needed in image)
+deployment/
+docker-compose*.yml
+Dockerfile*
+.dockerignore
