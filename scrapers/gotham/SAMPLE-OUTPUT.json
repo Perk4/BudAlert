@@ -1,0 +1,123 @@
+[
+  {
+    "id": "product-001",
+    "name": "Blue Dream 1/8oz",
+    "brand": "Good Chemistry",
+    "category": "Flower",
+    "price": 45.0,
+    "priceFormatted": "$45.00",
+    "thc": {
+      "formatted": "THC: 24.5%",
+      "value": 24.5
+    },
+    "cbd": {
+      "formatted": "CBD: 0.1%",
+      "value": 0.1
+    },
+    "image": "https://gotham.nyc/wp-content/uploads/blue-dream.jpg",
+    "images": [
+      "https://gotham.nyc/wp-content/uploads/blue-dream.jpg"
+    ],
+    "description": "Uplifting sativa-dominant hybrid with sweet berry aroma",
+    "url": "https://gotham.nyc/product/blue-dream-eighth",
+    "inStock": true,
+    "scrapedAt": "2026-03-05T04:20:00.000Z",
+    "source": "gotham-nyc",
+    "sourceUrl": "https://gotham.nyc/menu"
+  },
+  {
+    "id": "product-002",
+    "name": "Sour Diesel 3.5g",
+    "brand": "Vireo Health",
+    "category": "Flower",
+    "price": 50.0,
+    "priceFormatted": "$50.00",
+    "thc": {
+      "formatted": "THC: 22.3%",
+      "value": 22.3
+    },
+    "cbd": null,
+    "image": "https://gotham.nyc/wp-content/uploads/sour-diesel.jpg",
+    "images": [
+      "https://gotham.nyc/wp-content/uploads/sour-diesel.jpg"
+    ],
+    "description": "Energizing sativa with diesel aroma",
+    "url": "https://gotham.nyc/product/sour-diesel",
+    "inStock": true,
+    "scrapedAt": "2026-03-05T04:20:00.000Z",
+    "source": "gotham-nyc",
+    "sourceUrl": "https://gotham.nyc/menu"
+  },
+  {
+    "id": "product-003",
+    "name": "Wedding Cake Pre-Roll 1g",
+    "brand": "Gotham",
+    "category": "Pre-Rolls",
+    "price": 15.0,
+    "priceFormatted": "$15.00",
+    "thc": {
+      "formatted": "THC: 26.8%",
+      "value": 26.8
+    },
+    "cbd": {
+      "formatted": "CBD: 0.2%",
+      "value": 0.2
+    },
+    "image": "https://gotham.nyc/wp-content/uploads/wedding-cake-preroll.jpg",
+    "images": [
+      "https://gotham.nyc/wp-content/uploads/wedding-cake-preroll.jpg"
+    ],
+    "description": "Premium indica pre-roll",
+    "url": "https://gotham.nyc/product/wedding-cake-preroll",
+    "inStock": true,
+    "scrapedAt": "2026-03-05T04:20:00.000Z",
+    "source": "gotham-nyc",
+    "sourceUrl": "https://gotham.nyc/menu"
+  },
+  {
+    "id": "product-004",
+    "name": "Hybrid Gummies 10pk",
+    "brand": "Wana",
+    "category": "Edibles",
+    "price": 25.0,
+    "priceFormatted": "$25.00",
+    "thc": {
+      "formatted": "THC: 100mg total (10mg each)",
+      "value": 100.0
+    },
+    "cbd": null,
+    "image": "https://gotham.nyc/wp-content/uploads/wana-gummies.jpg",
+    "images": [
+      "https://gotham.nyc/wp-content/uploads/wana-gummies.jpg"
+    ],
+    "description": "Fast-acting hybrid gummies, 10mg THC each",
+    "url": "https://gotham.nyc/product/wana-hybrid-gummies",
+    "inStock": false,
+    "scrapedAt": "2026-03-05T04:20:00.000Z",
+    "source": "gotham-nyc",
+    "sourceUrl": "https://gotham.nyc/menu"
+  },
+  {
+    "id": "product-005",
+    "name": "Live Resin Cartridge - GG4",
+    "brand": "Select",
+    "category": "Vapes",
+    "price": 60.0,
+    "priceFormatted": "$60.00",
+    "thc": {
+      "formatted": "THC: 85.4%",
+      "value": 85.4
+    },
+    "cbd": null,
+    "image": "https://gotham.nyc/wp-content/uploads/select-gg4.jpg",
+    "images": [
+      "https://gotham.nyc/wp-content/uploads/select-gg4.jpg"
+    ],
+    "description": "Premium live resin vape cartridge, 0.5g",
+    "url": "https://gotham.nyc/product/select-live-resin-gg4",
+    "inStock": true,
+    "scrapedAt": "2026-03-05T04:20:00.000Z",
+    "source": "gotham-nyc",
+    "sourceUrl": "https://gotham.nyc/menu"
+  }
+]
