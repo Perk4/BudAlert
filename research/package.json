@@ -1,0 +1,16 @@
+{
+  "name": "dispensary-scraping-research",
+  "version": "1.0.0",
+  "description": "Research exercise for scraping NYC dispensaries",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "playwright": "^1.40.0",
+    "axios": "^1.6.0"
+  },
+  "devDependencies": {},
+  "author": "",
+  "license": "ISC"
+}
