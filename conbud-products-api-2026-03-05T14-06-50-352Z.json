@@ -1,0 +1,125 @@
+{
+  "metadata": {
+    "source": "conbud-les-api",
+    "scrapedAt": "2026-03-05T14:06:50.352Z",
+    "productCount": 3,
+    "errorCount": 0,
+    "config": {
+      "storeUrl": "https://conbud.com/stores/conbud-les",
+      "apiUrl": "https://api.dutchie.com/graphql",
+      "dispensaryId": "6430f42042cf3c004e37f0f8",
+      "chainId": "conbud",
+      "retailerId": "7d9a369e-6b29-4ccb-84c8-e802e28ae23e"
+    }
+  },
+  "products": [
+    {
+      "id": "prod_123",
+      "name": "Gorilla Glue #4",
+      "brand": "Premium Cannabis Co.",
+      "brandId": "brand_1",
+      "category": "FLOWER",
+      "subcategory": "Indica",
+      "price": 55,
+      "priceRange": {
+        "min": 55,
+        "max": 55
+      },
+      "thc": {
+        "formatted": "25.5%",
+        "value": 25.5
+      },
+      "cbd": {
+        "formatted": "0.1%",
+        "value": 0.1
+      },
+      "image": "https://images.dutchie.com/gorilla-glue.jpg",
+      "images": [
+        "https://images.dutchie.com/gorilla-glue.jpg",
+        "https://images.dutchie.com/gorilla-glue-2.jpg"
+      ],
+      "inStock": true,
+      "quantity": 25,
+      "description": "Heavy-hitting indica strain",
+      "effects": [
+        "Relaxed",
+        "Sleepy",
+        "Happy"
+      ],
+      "variants": [
+        {
+          "id": "var_1",
+          "option": "3.5g",
+          "price": 55
+        },
+        {
+          "id": "var_2",
+          "option": "7g",
+          "price": 100
+        }
+      ],
+      "scrapedAt": "2026-03-05T14:06:50.352Z",
+      "source": "conbud-les-api",
+      "sourceUrl": "https://conbud.com/stores/conbud-les"
+    },
+    {
+      "id": "prod_456",
+      "name": "Sour Diesel Vape Cart",
+      "brand": "Vape Masters",
+      "brandId": "brand_2",
+      "category": "VAPORIZERS",
+      "subcategory": "Cartridge",
+      "price": 45,
+      "priceRange": {
+        "min": 45,
+        "max": 45
+      },
+      "thc": {
+        "formatted": "85%",
+        "value": 85
+      },
+      "cbd": null,
+      "image": "https://images.dutchie.com/sour-diesel-cart.jpg",
+      "images": [],
+      "inStock": true,
+      "quantity": 10,
+      "effects": [],
+      "variants": [
+        {
+          "id": "var_3",
+          "option": "1g",
+          "price": 45
+        }
+      ],
+      "scrapedAt": "2026-03-05T14:06:50.352Z",
+      "source": "conbud-les-api",
+      "sourceUrl": "https://conbud.com/stores/conbud-les"
+    },
+    {
+      "id": "prod_789",
+      "name": "Blue Dream Pre-Roll Pack",
+      "brand": "Premium Cannabis Co.",
+      "brandId": "brand_1",
+      "category": "PREROLLS",
+      "price": 15,
+      "priceRange": {
+        "min": 15,
+        "max": 15
+      },
+      "thc": {
+        "formatted": "22%",
+        "value": 22
+      },
+      "cbd": null,
+      "images": [],
+      "inStock": false,
+      "quantity": 0,
+      "effects": [],
+      "variants": [],
+      "scrapedAt": "2026-03-05T14:06:50.352Z",
+      "source": "conbud-les-api",
+      "sourceUrl": "https://conbud.com/stores/conbud-les"
+    }
+  ],
+  "errors": []
+}
