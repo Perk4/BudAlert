@@ -1,0 +1,19 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+# Run tests before commit
+echo "Running tests before commit..."
+
+npm run test:unit
+if [ $? -ne 0 ]; then
+  echo "❌ Unit tests failed. Commit aborted."
+  exit 1
+fi
+
+npm run test:integration
+if [ $? -ne 0 ]; then
+  echo "❌ Integration tests failed. Commit aborted."
+  exit 1
+fi
+
+echo "✅ All tests passed!"
