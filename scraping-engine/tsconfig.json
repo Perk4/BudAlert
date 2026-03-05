@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "lib": ["ES2022"],
+    "moduleResolution": "bundler",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "outDir": "./dist",
+    "rootDir": "./",
+    "types": ["node"]
+  },
+  "include": [
+    "methods/**/*",
+    "inventory/**/*",
+    "orchestrator/**/*",
+    "clustering/**/*",
+    "analysis/**/*",
+    "api/**/*",
+    "scripts/**/*",
+    "convex/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "convex/_generated"
+  ]
+}
