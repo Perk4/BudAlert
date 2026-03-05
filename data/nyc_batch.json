@@ -1,0 +1,852 @@
+[
+  {
+    "entity_name": "Gotham Buds",
+    "address": "248 W 125th St",
+    "city": "New York",
+    "zip_code": "10027",
+    "website": "https://gothambudsny.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Housing Works Cannabis, LLC",
+    "address": "750 Broadway",
+    "city": "New York",
+    "zip_code": "10003",
+    "website": "https://hwcannabis.co/",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Smacked Village",
+    "address": "144 Bleecker St",
+    "city": "New York",
+    "zip_code": "10012",
+    "website": "https://getsmacked.online/",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "The Travel Agency Union Square",
+    "address": "835 Broadway",
+    "city": "New York",
+    "zip_code": "10003",
+    "website": "https://www.thetravelagency.co",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Dazed",
+    "address": "33 Union Sq. W",
+    "city": "New York",
+    "zip_code": "10003",
+    "website": "https://dazed.fun",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Gotham CAURD LLC",
+    "address": "3 E 3rd St",
+    "city": "New York",
+    "zip_code": "10003",
+    "website": "https://gotham.nyc/",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "CONBUD LLC",
+    "address": "85 Delancey St",
+    "city": "New York",
+    "zip_code": "10002",
+    "website": "https://conbud.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Dagmar Cannabis SoHo",
+    "address": "412 W Broadway",
+    "city": "New York",
+    "zip_code": "10012",
+    "website": "https://dagmarcannabis.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "The Herbal Care",
+    "address": "1412 Lexington Ave",
+    "city": "New York",
+    "zip_code": "10128",
+    "website": "https://thctheherbalcare.com/",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "WhiteboxTHC, LLC (dba Lenox Hill Cannabis Co.)",
+    "address": "334 E 73rd St",
+    "city": "New York",
+    "zip_code": "10021",
+    "website": "https://lenoxhillcannabis.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "SOODAKS, INC (dba VERDI)",
+    "address": "158 W 23rd St",
+    "city": "New York",
+    "zip_code": "10011",
+    "website": "https://verdicannabis.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Culture House",
+    "address": "958 Sixth Ave",
+    "city": "New York",
+    "zip_code": "10001",
+    "website": "https://culturehousenyc.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Torches NYC",
+    "address": "12 East 42nd St",
+    "city": "New York",
+    "zip_code": "10017",
+    "website": "https://torches.nyc",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Liberty Buds",
+    "address": "1115 1st Ave",
+    "city": "New York",
+    "zip_code": "10065",
+    "website": "https://libertybudsnyc.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Bliss + Lex (Weedish LLC)",
+    "address": "128 E 86th St",
+    "city": "New York",
+    "zip_code": "10028",
+    "website": "https://blissandlex.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Smiley Exotics",
+    "address": "201 East 30th St",
+    "city": "New York",
+    "zip_code": "10016",
+    "website": "https://www.smileyexoticsny.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Flower Power Dispensers",
+    "address": "22 W 66th St",
+    "city": "New York",
+    "zip_code": "10023",
+    "website": "https://www.flowerpowerdispensers.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Urban Leaf",
+    "address": "977 2nd Ave",
+    "city": "New York",
+    "zip_code": "10022",
+    "website": "https://urbanleafny.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Mighty Lucky Inc",
+    "address": "259 Bowery",
+    "city": "New York",
+    "zip_code": "10002",
+    "website": "https://mighty-lucky.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Blue Forest Farms Dispensary LLC",
+    "address": "122 E 25th St",
+    "city": "New York",
+    "zip_code": "10010",
+    "website": "https://blueforestfarmsdispensary.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Elevate Soho Cannabis",
+    "address": "481 Broadway",
+    "city": "New York",
+    "zip_code": "10013",
+    "website": "https://elevatesohocannabis.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Dagga LLC (dba Just A Little Higher Upper West Side)",
+    "address": "157 West 72nd St",
+    "city": "New York",
+    "zip_code": "10023",
+    "website": "https://justalittlehigher.com/",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Indoor Treez",
+    "address": "584 8th Ave",
+    "city": "New York",
+    "zip_code": "10018",
+    "website": "https://www.indoortreez.net",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Terrapin Greens LLC (dba The Travel Agency Fifth Avenue)",
+    "address": "587 Fifth Ave",
+    "city": "New York",
+    "zip_code": "10017",
+    "website": "https://www.thetravelagency.co",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Nicklz",
+    "address": "797 8th Ave",
+    "city": "New York",
+    "zip_code": "10019",
+    "website": "https://nicklzny.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Stoops NYC",
+    "address": "182 5th Ave",
+    "city": "New York",
+    "zip_code": "10010",
+    "website": "https://stoopsnyc.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Just A Little Higher Murray Hill",
+    "address": "698 2nd Ave",
+    "city": "New York",
+    "zip_code": "10016",
+    "website": "https://justalittlehigher.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Green Genius NYC",
+    "address": "214 3rd Ave",
+    "city": "New York",
+    "zip_code": "10003",
+    "website": "https://greengeniusnyc.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Qube",
+    "address": "1412 Broadway",
+    "city": "New York",
+    "zip_code": "10018",
+    "website": "https://qubenyc.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Cannadreams",
+    "address": "862 9th Ave",
+    "city": "New York",
+    "zip_code": "10019",
+    "website": "https://cannadreams.nyc",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "KushKlub NYC",
+    "address": "186 Orchard St",
+    "city": "New York",
+    "zip_code": "10002",
+    "website": "https://kushklub.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Happy Munkey",
+    "address": "151 Dyckman St",
+    "city": "New York",
+    "zip_code": "10040",
+    "website": "https://happymunkey.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Alto on Chambers",
+    "address": "110 Chambers St",
+    "city": "New York",
+    "zip_code": "10007",
+    "website": "https://altocanna.nyc",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Sparkboro",
+    "address": "704 W 177th St",
+    "city": "New York",
+    "zip_code": "10033",
+    "website": "https://sparkborony.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Etain Manhattan",
+    "address": "242 East 58th St",
+    "city": "New York",
+    "zip_code": "10022",
+    "website": "https://www.etain.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Sweetlife",
+    "address": "1662 First Ave",
+    "city": "New York",
+    "zip_code": "10028",
+    "website": "https://www.sweetlife.nyc",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Midnight Moon",
+    "address": "1536 Amsterdam Ave",
+    "city": "New York",
+    "zip_code": "10031",
+    "website": "https://www.midnightmoon.nyc",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Alta Dispensary",
+    "address": "52 A Kenmare St",
+    "city": "New York",
+    "zip_code": "10012",
+    "website": "https://altadispensary.nyc",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "NY Cannabis Co.",
+    "address": "743 9th Ave",
+    "city": "New York",
+    "zip_code": "10019",
+    "website": "https://www.nycannabisco.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "SOFACLUB East Village",
+    "address": "229 Avenue B",
+    "city": "New York",
+    "zip_code": "10009",
+    "website": "https://www.sofaclub.nyc",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Charlie Fox",
+    "address": "719 7th Ave",
+    "city": "New York",
+    "zip_code": "10036",
+    "website": "https://www.shopcharliefox.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Housing Works Cannabis Co NoMad",
+    "address": "846 Sixth Ave",
+    "city": "New York",
+    "zip_code": "10001",
+    "website": "https://hwcannabis.co",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "The Emerald Dispensary Manhattan",
+    "address": "1190 Lexington Ave",
+    "city": "New York",
+    "zip_code": "10028",
+    "website": "https://emeralddispensary.nyc",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "The Flowery Upper West Side",
+    "address": "2465 Broadway",
+    "city": "New York",
+    "zip_code": "10025",
+    "website": "https://www.thefloweryny.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Broadway Strains",
+    "address": "3858 Broadway",
+    "city": "New York",
+    "zip_code": "10032",
+    "website": "https://broadwaystrains.com/",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Elevation HQ NY",
+    "address": "701 8th Ave",
+    "city": "New York",
+    "zip_code": "10036",
+    "website": "https://elevationhqnyc.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "New Amsterdam NYC",
+    "address": "245 W 14th St",
+    "city": "New York",
+    "zip_code": "10011",
+    "website": "https://www.newamsterdam.nyc",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Chelsea Cannabis Co.",
+    "address": "104 7th Ave",
+    "city": "New York",
+    "zip_code": "10011",
+    "website": "https://chelseacannabis.co",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Bud & Honey",
+    "address": "241 5th Ave",
+    "city": "New York",
+    "zip_code": "10016",
+    "website": "https://budnhoneydispensary.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Hells Kitchen Cannabis Company",
+    "address": "356 W 40th St",
+    "city": "New York",
+    "zip_code": "10018",
+    "website": "https://www.hkcc.nyc",
+    "is_microbusiness": true,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Cannabis on Lex",
+    "address": "459 Lexington Ave",
+    "city": "New York",
+    "zip_code": "10017",
+    "website": "https://www.cannabisonlex.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Paint, Puff 'n Peace",
+    "address": "2119 Frederick Douglass Blvd",
+    "city": "New York",
+    "zip_code": "10026",
+    "website": null,
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Herbwell Cannabis Manhattan",
+    "address": "519 Madison Ave",
+    "city": "New York",
+    "zip_code": "10022",
+    "website": "https://www.herbwellcannabis.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Gotham Chelsea",
+    "address": "146 10th Ave",
+    "city": "New York",
+    "zip_code": "10011",
+    "website": "https://www.gotham.nyc",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Mary Jane Cannabis Co.",
+    "address": "799 Lexington Ave",
+    "city": "New York",
+    "zip_code": "10065",
+    "website": "https://maryjanecannabisco.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "NY Cannabis Co. 5th Ave",
+    "address": "381 5th Avenue",
+    "city": "New York",
+    "zip_code": "10016",
+    "website": "https://www.nycannabisco.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Nucleus Dispensary",
+    "address": "1819 2nd Avenue",
+    "city": "New York",
+    "zip_code": "10128",
+    "website": "https://nucleusdispensary.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Sky High Club",
+    "address": "129 Avenue C",
+    "city": "New York",
+    "zip_code": "10009",
+    "website": "https://www.skyhighclubnyc.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Tetra East Harlem",
+    "address": "2152 3rd Ave",
+    "city": "New York",
+    "zip_code": "10035",
+    "website": "https://www.tetraeastharlem.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "DISPO Cannabis Club",
+    "address": "588 4th Ave",
+    "city": "New York",
+    "zip_code": "11215",
+    "website": "https://dispostore.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "The Travel Agency SoHo",
+    "address": "598 Broadway",
+    "city": "New York",
+    "zip_code": "10012",
+    "website": "https://www.thetravelagency.co",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Superfly",
+    "address": "57 W 86th St",
+    "city": "New York",
+    "zip_code": "10024",
+    "website": "https://hellosuperfly.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "The Alchemy",
+    "address": "302 8th Ave",
+    "city": "New York",
+    "zip_code": "10001",
+    "website": "https://www.thealchemy.nyc",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Hornbill",
+    "address": "224 1st Ave",
+    "city": "New York",
+    "zip_code": "10009",
+    "website": "https://hornbillnyc.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "The Flowery Chinatown",
+    "address": "70 Canal St",
+    "city": "New York",
+    "zip_code": "10002",
+    "website": "https://www.thefloweryny.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "FlynnStoned Chelsea",
+    "address": "206 8th Ave",
+    "city": "New York",
+    "zip_code": "10011",
+    "website": "https://flynnstoned.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "The Flowery East Village",
+    "address": "101 E 10th St",
+    "city": "New York",
+    "zip_code": "10003",
+    "website": "https://www.thefloweryny.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Strains for Life Powered by Indoor",
+    "address": "3547 Broadway",
+    "city": "New York",
+    "zip_code": "10031",
+    "website": "https://www.strainsforlife.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "NYCBUD Midtown",
+    "address": "405 West 39th St",
+    "city": "New York",
+    "zip_code": "10018",
+    "website": "https://www.nycbud.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Lighthouse Cannabis",
+    "address": "381 Broadway",
+    "city": "New York",
+    "zip_code": "10013",
+    "website": "https://www.lighthousecannabis.nyc",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Vereleaf",
+    "address": "383 8th Ave",
+    "city": "New York",
+    "zip_code": "10001",
+    "website": "https://Vereleaf.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Excited Unlimited",
+    "address": "4441 Broadway",
+    "city": "New York",
+    "zip_code": "10040",
+    "website": "https://unlimitedcannabis.net",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Green Klub",
+    "address": "108 South St",
+    "city": "New York",
+    "zip_code": "10038",
+    "website": "https://www.greenklubnyc.com",
+    "is_microbusiness": true,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Le Flora Cannabis",
+    "address": "111 Fulton St",
+    "city": "New York",
+    "zip_code": "10038",
+    "website": "https://www.lefloracannabis.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "The Sanctuary Garden",
+    "address": "2610 Broadway Ave",
+    "city": "New York",
+    "zip_code": "10025",
+    "website": "https://thesanctuarygarden.co",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "PRYZM Dispensary",
+    "address": "15 Avenue B",
+    "city": "New York",
+    "zip_code": "10009",
+    "website": "https://pryzmdispensary.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "The Flowery West Village",
+    "address": "112 Christopher St",
+    "city": "New York",
+    "zip_code": "10014",
+    "website": "https://www.thefloweryny.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Rezidue",
+    "address": "723 11th Ave",
+    "city": "New York",
+    "zip_code": "10019",
+    "website": "https://rezidueny.com/",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "FlynnStoned Midtown Manhattan",
+    "address": "820 2nd Ave",
+    "city": "New York",
+    "zip_code": "10017",
+    "website": "https://flynnstoned.com/dispensaries/new-york/midtown-manhattan/",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Maison Canal",
+    "address": "386 Canal St",
+    "city": "New York",
+    "zip_code": "10013",
+    "website": "https://maisoncanalny.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Carnegie Hill Cannabis Co.",
+    "address": "1720 2nd Ave",
+    "city": "New York",
+    "zip_code": "10128",
+    "website": "https://carnegiehillcannabis.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "AVA Flower Co",
+    "address": "1280 1st Ave",
+    "city": "New York",
+    "zip_code": "10065",
+    "website": "https://www.avaflowerco.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "The Alchemy Flatiron",
+    "address": "12 W 18th St",
+    "city": "New York",
+    "zip_code": "10011",
+    "website": "https://www.thealchemy.nyc",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "SOFACLUB Midtown",
+    "address": "127 E 56th St",
+    "city": "New York",
+    "zip_code": "10022",
+    "website": "https://www.sofaclub.nyc",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Indoor Treez Fashion Avenue",
+    "address": "474 7th Ave",
+    "city": "New York",
+    "zip_code": "10018",
+    "website": "https://www.indoortreez.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  }
+]
