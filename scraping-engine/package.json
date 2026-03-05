@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "npm run convex:dev",
+    "build": "tsc",
     "convex:dev": "convex dev",
     "convex:deploy": "convex deploy",
     "seed:nys": "node scripts/seed-nys.mjs",
@@ -13,6 +14,7 @@
     "research:cluster": "node scripts/research-cluster.mjs",
     "research:all": "node scripts/research-all.mjs",
     "retry:blocked": "node scripts/retry-blocked.mjs",
+    "continuous": "node scripts/continuous.mjs",
     "status": "node scripts/status.mjs",
     "test": "vitest",
     "test:watch": "vitest watch",
