@@ -9,6 +9,7 @@
 
 import axios from 'axios';
 import * as cheerio from 'cheerio';
+import { writeFileSync } from 'fs';
 
 const GOTHAM_CONFIG = {
   baseUrl: 'https://gotham.nyc',
@@ -52,6 +53,11 @@ export class GothamScraper {
    */
   extractProducts(html, url) {
     console.log('📦 Parsing HTML for products...');
+
+    if (typeof html !== 'string' || html.trim() === '') {
+      console.warn('  ⚠️  Empty or invalid HTML provided, returning no products');
+      return [];
+    }
     
     const $ = cheerio.load(html);
     const products = [];
@@ -176,22 +182,30 @@ export class GothamScraper {
       '[data-product-id]'
     ];
 
+    const elements = [];
+    const seenElements = new Set();
+
     for (const selector of selectors) {
-      const elements = $(selector);
-      
-      if (elements.length > 0) {
-        console.log(`  → Found ${elements.length} elements with selector: ${selector}`);
-        
-        elements.each((i, elem) => {
-          const product = this.parseProductElement($, elem);
-          if (product && product.name) {
-            products.push(product);
-          }
-        });
-        
-        break; // Use first working selector
+      const matches = $(selector).toArray();
+
+      if (matches.length > 0) {
+        console.log(`  → Found ${matches.length} elements with selector: ${selector}`);
+      }
+
+      for (const elem of matches) {
+        if (!seenElements.has(elem)) {
+          seenElements.add(elem);
+          elements.push(elem);
+        }
       }
     }
+
+    elements.forEach((elem) => {
+      const product = this.parseProductElement($, elem);
+      if (product && product.name) {
+        products.push(product);
+      }
+    });
 
     return products;
   }
@@ -230,9 +244,16 @@ export class GothamScraper {
       .first().text().trim() || null;
 
     // Check stock status
-    const inStock = !text.toLowerCase().includes('out of stock') &&
-                    !text.toLowerCase().includes('sold out') &&
-                    !$elem.hasClass('out-of-stock');
+    const lowerText = text.toLowerCase();
+    const classNames = ($elem.attr('class') || '').toLowerCase();
+    const hasOutOfStockText = lowerText.includes('out of stock') ||
+      lowerText.includes('sold out') ||
+      lowerText.includes('unavailable');
+    const hasOutOfStockClass = classNames.includes('out-of-stock') ||
+      classNames.includes('outofstock') ||
+      classNames.includes('sold-out') ||
+      classNames.includes('soldout');
+    const inStock = !hasOutOfStockText && !hasOutOfStockClass;
 
     return {
       name,
@@ -390,3 +411,25 @@ export class GothamScraper {
 }
 
 export default GothamScraper;
+
+// Run if executed directly
+if (import.meta.url === `file://${process.argv[1]}`) {
+  const scraper = new GothamScraper();
+
+  scraper.scrape()
+    .then(products => {
+      console.log('\n✅ SUCCESS!');
+      console.log(`📊 Scraped ${products.length} products`);
+
+      const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
+      const filename = `gotham-products-${timestamp}.json`;
+      writeFileSync(filename, JSON.stringify(products, null, 2));
+      console.log(`💾 Saved to ${filename}`);
+
+      process.exit(0);
+    })
+    .catch(error => {
+      console.error('\n❌ FAILED:', error.message);
+      process.exit(1);
+    });
+}

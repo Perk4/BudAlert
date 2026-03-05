@@ -112,8 +112,13 @@ A unified inventory monitoring system for all dispensary stores with tiered poll
 # Python dependencies
 pip install asyncio aiofiles pyyaml playwright
 
-# Install Playwright browsers
-playwright install chromium
+# Optional: install/check Playwright in an inventory-local browser cache
+./bootstrap_playwright.sh --install
+
+# Lightweight validation only
+./bootstrap_playwright.sh --check
+
+# If system Python is externally managed, the script auto-falls back to ./inventory/.venv
 ```
 
 ### Directory Structure

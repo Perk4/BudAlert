@@ -61,6 +61,11 @@ class HousingWorksScraper {
    */
   parseProducts(html) {
     console.log('📦 Parsing products from HTML...');
+
+    if (typeof html !== 'string' || html.trim() === '') {
+      console.warn('   ⚠️  Empty or invalid HTML provided');
+      return [];
+    }
     
     const $ = cheerio.load(html);
     const products = [];
@@ -76,16 +81,24 @@ class HousingWorksScraper {
       'div[class*="product"]'
     ];
 
-    let elements;
+    const elements = [];
+    const seenElements = new Set();
+
     for (const selector of productSelectors) {
-      elements = $(selector);
-      if (elements.length > 0) {
-        console.log(`   ✅ Found ${elements.length} products using: ${selector}`);
-        break;
+      const matches = $(selector).toArray();
+      if (matches.length > 0) {
+        console.log(`   ✅ Found ${matches.length} products using: ${selector}`);
+      }
+
+      for (const elem of matches) {
+        if (!seenElements.has(elem)) {
+          seenElements.add(elem);
+          elements.push(elem);
+        }
       }
     }
 
-    if (!elements || elements.length === 0) {
+    if (elements.length === 0) {
       console.warn('   ⚠️  No product elements found');
       
       // Debug: save HTML to file
@@ -95,7 +108,7 @@ class HousingWorksScraper {
       return products;
     }
 
-    elements.each((i, elem) => {
+    elements.forEach((elem, i) => {
       try {
         const product = this.extractProductData($, elem);
         if (product) {

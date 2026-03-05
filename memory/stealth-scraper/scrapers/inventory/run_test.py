@@ -46,7 +46,7 @@ class PollingTestRunner:
             'alta': {
                 'platform': 'joint_ecommerce', 
                 'baseline_file': 'alta_baseline.json',
-                'scraper_module': 'joint-ecommerce.alta',
+                'scraper_module': 'joint_ecommerce.alta',
                 'interval_seconds': 300  # 5 minutes
             },
             'happy_munkey': {

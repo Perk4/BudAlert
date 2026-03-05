@@ -23,6 +23,11 @@
 import axios from 'axios';
 import { writeFile } from 'fs/promises';
 import {
+  cookiesToHeader,
+  defaultSessionFile,
+  loadSessionFile
+} from '../session-storage.mjs';
+import {
   CONBUD_CONFIG,
   FILTERED_PRODUCTS_QUERY,
   MENU_PRODUCTS_QUERY,
@@ -32,12 +37,29 @@ import {
   COMMON_CATEGORIES
 } from './queries.mjs';
 
+const DEFAULT_SESSION_FILE = defaultSessionFile(import.meta.url, 'conbud-session.json');
+
+function parseBoolean(value, defaultValue) {
+  if (value === undefined) {
+    return defaultValue;
+  }
+
+  const normalized = String(value).trim().toLowerCase();
+  if (['1', 'true', 'yes', 'y', 'on'].includes(normalized)) return true;
+  if (['0', 'false', 'no', 'n', 'off'].includes(normalized)) return false;
+
+  return defaultValue;
+}
+
 export class ConbudAPIScraper {
   constructor(options = {}) {
     this.options = {
       timeout: 30000,
       retries: 3,
       retryDelay: 2000,
+      loadSession: true,
+      sessionFile: DEFAULT_SESSION_FILE,
+      applySessionHeaders: true,
       ...options
     };
     
@@ -61,6 +83,44 @@ export class ConbudAPIScraper {
         'Sec-Fetch-Site': 'cross-site'
       }
     });
+  }
+
+  /**
+   * Load persisted browser session cookies/headers for API reuse
+   */
+  async applyPersistedSession() {
+    if (!this.options.loadSession) {
+      console.log('🍪 Persisted session loading disabled by configuration');
+      return;
+    }
+
+    const session = await loadSessionFile(this.options.sessionFile);
+    if (!session) {
+      console.log(`🍪 No session file found at ${this.options.sessionFile}`);
+      return;
+    }
+
+    const cookieHeader = session.cookieHeader || cookiesToHeader(session.cookies);
+    if (cookieHeader) {
+      this.client.defaults.headers.Cookie = cookieHeader;
+      console.log(`🍪 Applied persisted cookie header from ${this.options.sessionFile}`);
+    } else {
+      console.log(`🍪 Session file loaded, but no cookies found in ${this.options.sessionFile}`);
+    }
+
+    if (this.options.applySessionHeaders && session.apiHeaders && typeof session.apiHeaders === 'object') {
+      const ignoredHeaders = new Set(['connection', 'content-length', 'host', 'transfer-encoding']);
+      for (const [key, value] of Object.entries(session.apiHeaders)) {
+        const normalizedKey = String(key).toLowerCase();
+        if (ignoredHeaders.has(normalizedKey) || value === undefined || value === null || value === '') {
+          continue;
+        }
+
+        this.client.defaults.headers[normalizedKey] = String(value);
+      }
+
+      console.log('🍪 Applied persisted API headers from browser session');
+    }
   }
 
   /**
@@ -294,6 +354,7 @@ export class ConbudAPIScraper {
     
     try {
       console.log('🚀 Starting Conbud API scraper...\n');
+      await this.applyPersistedSession();
       
       // Fetch products
       const rawProducts = await this.fetchAllProducts();
@@ -339,17 +400,20 @@ export class ConbudAPIScraper {
 export async function main() {
   const scraper = new ConbudAPIScraper({
     timeout: 30000,
-    retries: 3
+    retries: 3,
+    loadSession: parseBoolean(process.env.CONBUD_USE_SESSION, true),
+    sessionFile: process.env.CONBUD_SESSION_FILE || DEFAULT_SESSION_FILE,
+    applySessionHeaders: parseBoolean(process.env.CONBUD_APPLY_SESSION_HEADERS, true)
   });
-  
+
   const result = await scraper.scrape();
-  
+
   if (result.success) {
     console.log('\n✅ SUCCESS!');
     process.exit(0);
   } else {
     console.error('\n❌ FAILED!');
-    console.error('💡 TIP: Run browser-scraper.mjs first to extract GraphQL queries');
+    console.error('💡 TIP: Run browser-scraper.mjs first to refresh session + GraphQL query capture');
     process.exit(1);
   }
 }

@@ -28,10 +28,38 @@
 import { chromium } from 'playwright';
 import { writeFile } from 'fs/promises';
 import {
+  cookiesToHeader,
+  defaultSessionFile,
+  loadSessionFile,
+  saveSessionFile
+} from '../session-storage.mjs';
+import {
   CONBUD_CONFIG,
-  normalizeProduct,
-  extractQueryInfo
+  normalizeProduct
 } from './queries.mjs';
+
+const DEFAULT_SESSION_FILE = defaultSessionFile(import.meta.url, 'conbud-session.json');
+
+function parseBoolean(value, defaultValue) {
+  if (value === undefined) {
+    return defaultValue;
+  }
+
+  const normalized = String(value).trim().toLowerCase();
+  if (['1', 'true', 'yes', 'y', 'on'].includes(normalized)) return true;
+  if (['0', 'false', 'no', 'n', 'off'].includes(normalized)) return false;
+
+  return defaultValue;
+}
+
+function parseNumber(value, defaultValue) {
+  if (value === undefined) {
+    return defaultValue;
+  }
+
+  const parsed = Number.parseInt(String(value), 10);
+  return Number.isFinite(parsed) ? parsed : defaultValue;
+}
 
 export class ConbudBrowserScraper {
   constructor(options = {}) {
@@ -39,16 +67,23 @@ export class ConbudBrowserScraper {
       headless: true,
       timeout: 60000,
       captchaWaitTime: 30000,
+      manualSolve: false,
+      manualSolveWaitTime: 120000,
       scrollSteps: 5,
       scrollDelay: 1000,
+      sessionFile: DEFAULT_SESSION_FILE,
+      loadSession: true,
+      saveSession: true,
       ...options
     };
     
     this.browser = null;
+    this.context = null;
     this.page = null;
     this.products = [];
     this.graphqlRequests = [];
     this.graphqlResponses = [];
+    this.latestGraphqlHeaders = null;
   }
 
   /**
@@ -67,7 +102,7 @@ export class ConbudBrowserScraper {
       ]
     });
 
-    const context = await this.browser.newContext({
+    this.context = await this.browser.newContext({
       viewport: { width: 1920, height: 1080 },
       userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
       extraHTTPHeaders: {
@@ -76,12 +111,112 @@ export class ConbudBrowserScraper {
       }
     });
 
-    this.page = await context.newPage();
+    await this.loadPersistedSession();
+    this.page = await this.context.newPage();
     
     // Set up network interception
     await this.setupNetworkIntercept();
     
     console.log('✅ Browser initialized');
+  }
+
+  /**
+   * Load persisted session cookies if available
+   */
+  async loadPersistedSession() {
+    if (!this.options.loadSession) {
+      console.log('🍪 Session load disabled by configuration');
+      return;
+    }
+
+    const session = await loadSessionFile(this.options.sessionFile);
+    if (!session) {
+      console.log(`🍪 No persisted session found at ${this.options.sessionFile}`);
+      return;
+    }
+
+    const cookies = Array.isArray(session.cookies) ? session.cookies : [];
+    if (cookies.length === 0) {
+      console.log(`🍪 Session file found but no cookies present: ${this.options.sessionFile}`);
+      return;
+    }
+
+    await this.context.addCookies(cookies);
+    console.log(`🍪 Loaded ${cookies.length} cookies from ${this.options.sessionFile}`);
+  }
+
+  /**
+   * Save current browser session for API/browser reuse
+   */
+  async persistSession(reason = 'run-update') {
+    if (!this.options.saveSession || !this.context) {
+      return;
+    }
+
+    const cookies = await this.context.cookies();
+    const sessionPayload = {
+      metadata: {
+        source: 'conbud-les-browser',
+        updatedAt: new Date().toISOString(),
+        reason,
+        cookieCount: cookies.length
+      },
+      cookies,
+      cookieHeader: cookiesToHeader(cookies),
+      apiHeaders: this.sanitizeHeaders(this.latestGraphqlHeaders),
+      urls: {
+        store: CONBUD_CONFIG.storeUrl,
+        api: CONBUD_CONFIG.apiUrl
+      }
+    };
+
+    await saveSessionFile(this.options.sessionFile, sessionPayload);
+    console.log(`🍪 Session saved (${cookies.length} cookies) -> ${this.options.sessionFile}`);
+  }
+
+  /**
+   * Drop headers that are unsafe or useless to replay
+   */
+  sanitizeHeaders(headers) {
+    if (!headers || typeof headers !== 'object') {
+      return {};
+    }
+
+    const blocked = new Set(['connection', 'content-length', 'host', 'transfer-encoding']);
+    const sanitized = {};
+
+    for (const [key, value] of Object.entries(headers)) {
+      const normalizedKey = String(key).toLowerCase();
+      if (blocked.has(normalizedKey)) {
+        continue;
+      }
+      if (value === undefined || value === null || value === '') {
+        continue;
+      }
+
+      sanitized[normalizedKey] = String(value);
+    }
+
+    return sanitized;
+  }
+
+  /**
+   * Wait while operator solves anti-bot gate in visible browser mode
+   */
+  async waitForManualSolve(reason) {
+    if (this.options.headless) {
+      console.log('⚠️  Manual solve requested but browser is headless. Set HEADLESS=false.');
+      return;
+    }
+
+    console.log('\n🧑‍💻 Operator action required');
+    console.log(`  Reason: ${reason}`);
+    console.log('  Action: solve any anti-bot challenge in the browser window.');
+    console.log(`  Waiting ${this.options.manualSolveWaitTime}ms before continuing...`);
+
+    await this.page.waitForTimeout(this.options.manualSolveWaitTime);
+    await this.persistSession('manual-solve');
+    console.log('✅ Manual solve wait complete\n');
   }
 
   /**
@@ -110,6 +245,7 @@ export class ConbudBrowserScraper {
             };
             
             this.graphqlRequests.push(queryInfo);
+            this.latestGraphqlHeaders = request.headers();
             console.log(`📤 GraphQL Request: ${payload.operationName || 'unnamed'}`);
           } catch (e) {
             // Not JSON, skip
@@ -202,8 +338,9 @@ export class ConbudBrowserScraper {
    * Handle Turnstile CAPTCHA if present
    */
   async handleCaptcha() {
-    const captchaFrame = this.page.frameLocator('iframe[src*="turnstile"]');
-    const hasCaptcha = await captchaFrame.locator('body').count() > 0;
+    const hasCaptcha = await this.page.locator(
+      'iframe[src*="turnstile"], iframe[title*="challenge"], [data-testid*="captcha"]'
+    ).count() > 0;
     
     if (hasCaptcha) {
       console.warn('⚠️  Turnstile CAPTCHA detected!');
@@ -213,11 +350,18 @@ export class ConbudBrowserScraper {
         console.log(`⏳ Waiting ${this.options.captchaWaitTime}ms...`);
         await this.page.waitForTimeout(this.options.captchaWaitTime);
       } else {
-        console.log('🖱️  Please solve the CAPTCHA in the browser window');
-        console.log(`⏳ Waiting ${this.options.captchaWaitTime}ms for manual solve...`);
-        await this.page.waitForTimeout(this.options.captchaWaitTime);
+        const waitMs = Math.max(this.options.captchaWaitTime, this.options.manualSolveWaitTime);
+        const previousWait = this.options.manualSolveWaitTime;
+        this.options.manualSolveWaitTime = waitMs;
+        await this.waitForManualSolve('Turnstile CAPTCHA challenge');
+        this.options.manualSolveWaitTime = previousWait;
       }
+
+      await this.persistSession('captcha-checkpoint');
+      return true;
     }
+
+    return false;
   }
 
   /**
@@ -413,11 +557,15 @@ export const EXTRACTED_QUERIES = ${JSON.stringify(queries, null, 2)};
       
       await this.init();
       await this.navigateAndWait();
+      if (this.options.manualSolve && !this.options.headless) {
+        await this.waitForManualSolve('Optional manual verification before extraction');
+      }
       await this.scrollToLoadAll();
       await this.navigateCategories();
       
       const stats = await this.saveData();
       await this.extractQueries();
+      await this.persistSession('scrape-complete');
       
       const duration = ((Date.now() - startTime) / 1000).toFixed(2);
       
@@ -438,6 +586,11 @@ export const EXTRACTED_QUERIES = ${JSON.stringify(queries, null, 2)};
       throw error;
     } finally {
       if (this.browser) {
+        try {
+          await this.persistSession('before-close');
+        } catch (sessionError) {
+          console.warn(`⚠️  Failed to persist session before close: ${sessionError.message}`);
+        }
         await this.browser.close();
         console.log('🔒 Browser closed');
       }
@@ -449,14 +602,31 @@ export const EXTRACTED_QUERIES = ${JSON.stringify(queries, null, 2)};
  * CLI runner
  */
 export async function main() {
+  const headless = parseBoolean(process.env.HEADLESS, true);
+  const manualSolve = parseBoolean(process.env.MANUAL_SOLVE, !headless);
+  const captchaWaitTime = parseNumber(process.env.CAPTCHA_WAIT_MS, 30000);
+  const manualSolveWaitTime = parseNumber(process.env.MANUAL_SOLVE_WAIT_MS, 120000);
+
   const scraper = new ConbudBrowserScraper({
-    headless: process.env.HEADLESS !== 'false',
+    headless,
     timeout: 60000,
-    captchaWaitTime: 30000
+    captchaWaitTime,
+    manualSolve,
+    manualSolveWaitTime,
+    sessionFile: process.env.CONBUD_SESSION_FILE || DEFAULT_SESSION_FILE,
+    loadSession: parseBoolean(process.env.LOAD_SESSION, true),
+    saveSession: parseBoolean(process.env.SAVE_SESSION, true)
   });
-  
+
+  console.log('🛠️  Runtime options:');
+  console.log(`  HEADLESS=${headless}`);
+  console.log(`  MANUAL_SOLVE=${manualSolve}`);
+  console.log(`  CAPTCHA_WAIT_MS=${captchaWaitTime}`);
+  console.log(`  MANUAL_SOLVE_WAIT_MS=${manualSolveWaitTime}`);
+  console.log(`  SESSION_FILE=${scraper.options.sessionFile}`);
+
   try {
-    const result = await scraper.scrape();
+    await scraper.scrape();
     console.log('\n✅ SUCCESS!');
     process.exit(0);
   } catch (error) {
