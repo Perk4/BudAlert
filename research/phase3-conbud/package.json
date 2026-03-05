@@ -1,0 +1,18 @@
+{
+  "name": "conbud-scraper",
+  "version": "1.0.0",
+  "description": "Scraper for Conbud LES dispensary (Dutchie platform)",
+  "main": "scraper-network-intercept.js",
+  "scripts": {
+    "scrape": "node scraper-network-intercept.js",
+    "scrape:api": "node scraper-graphql-direct.js",
+    "test": "node test-scraper.js"
+  },
+  "dependencies": {
+    "playwright": "^1.40.0",
+    "axios": "^1.6.0"
+  },
+  "keywords": ["scraper", "dutchie", "dispensary", "cannabis"],
+  "author": "BudAlert",
+  "license": "MIT"
+}
