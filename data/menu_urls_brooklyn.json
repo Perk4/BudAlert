@@ -1,0 +1,605 @@
+[
+  {
+    "entity_name": "Grow Together",
+    "website": "https://bkdispensary.com",
+    "menuUrl": "https://growtogetherbrooklyn.dispensary.shop/rec/menu",
+    "menuProvider": "unknown",
+    "menuValidated": true,
+    "discoveryMethod": "link_scan",
+    "notes": "Found 3 potential menu links"
+  },
+  {
+    "entity_name": "BK Exotic",
+    "website": "http://www.brooklynexotic.com",
+    "menuUrl": "http://www.brooklynexotic.com/shop",
+    "menuProvider": "blaze",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /shop"
+  },
+  {
+    "entity_name": "The Emerald Dispensary",
+    "website": "https://theemeralddispensary.com",
+    "menuUrl": "https://theemeralddispensary.com/shop",
+    "menuProvider": "dutchie",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /shop"
+  },
+  {
+    "entity_name": "Tiki Leaves",
+    "website": "http://www.tikileaves.com",
+    "menuUrl": null,
+    "menuProvider": null,
+    "menuValidated": false,
+    "discoveryMethod": null,
+    "notes": "Error: Failed to fetch http://www.tikileaves.com: Request failed with status code 409"
+  },
+  {
+    "entity_name": "The Travel Agency Downtown Brooklyn",
+    "website": "http://thetravelagency.co",
+    "menuUrl": "http://thetravelagency.co/menu",
+    "menuProvider": "dutchie",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /menu"
+  },
+  {
+    "entity_name": "Matawana Dispensary",
+    "website": "https://matawanany.com",
+    "menuUrl": "https://matawanany.com/menu",
+    "menuProvider": "blaze",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /menu"
+  },
+  {
+    "entity_name": "Misha's Flower Shop",
+    "website": "https://www.mishasflowershop.com",
+    "menuUrl": "https://www.mishasflowershop.com/menu",
+    "menuProvider": "blaze",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /menu"
+  },
+  {
+    "entity_name": "Canna Life NY Inc (dba Hii)",
+    "website": "https://www.hiinyc.com",
+    "menuUrl": "https://www.hiinyc.com/shop",
+    "menuProvider": "dutchie",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /shop"
+  },
+  {
+    "entity_name": "Society House",
+    "website": "https://www.societyhousebk.com/",
+    "menuUrl": "https://www.societyhousebk.com/store",
+    "menuProvider": "blaze",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /store"
+  },
+  {
+    "entity_name": "Bedford Club",
+    "website": "https://bedfordclub.com",
+    "menuUrl": "https://bedfordclub.com/menu",
+    "menuProvider": "blaze",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /menu"
+  },
+  {
+    "entity_name": "Chronic Brooklyn",
+    "website": "https://chronicbrooklyn.com",
+    "menuUrl": "https://chronicbrooklyn.com/menu",
+    "menuProvider": "unknown",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /menu"
+  },
+  {
+    "entity_name": "Beleaf BK",
+    "website": "https://beleafny.com",
+    "menuUrl": "https://beleafny.com/products",
+    "menuProvider": "unknown",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /products"
+  },
+  {
+    "entity_name": "Brooklyn Bourne",
+    "website": "http://brooklynbourne.com",
+    "menuUrl": "http://brooklynbourne.com/store.html",
+    "menuProvider": "unknown",
+    "menuValidated": true,
+    "discoveryMethod": "link_scan",
+    "notes": "Found 7 potential menu links"
+  },
+  {
+    "entity_name": "Gotham Williamsburg",
+    "website": "https://gotham.nyc",
+    "menuUrl": "https://gotham.nyc/cannabis",
+    "menuProvider": "unknown",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "No menu links found on homepage"
+  },
+  {
+    "entity_name": "Twisted Vibration",
+    "website": "https://twistedvibration.com",
+    "menuUrl": "https://twistedvibration.com/menu",
+    "menuProvider": "unknown",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /menu"
+  },
+  {
+    "entity_name": "Fireleaf",
+    "website": "https://www.fireleafny.com",
+    "menuUrl": "https://www.fireleafny.com/shop",
+    "menuProvider": "dutchie",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /shop"
+  },
+  {
+    "entity_name": "Happy Munkey Brooklyn",
+    "website": "https://happymunkey.com",
+    "menuUrl": "https://happymunkey.com/menu",
+    "menuProvider": "blaze",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /menu"
+  },
+  {
+    "entity_name": "By Any Other Name",
+    "website": "https://byanyothernamebk.com",
+    "menuUrl": "https://byanyothernamebk.com/shop",
+    "menuProvider": "dutchie",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /shop"
+  },
+  {
+    "entity_name": "The Plug",
+    "website": "https://theplugny.com/",
+    "menuUrl": "https://theplugny.com/cannabis",
+    "menuProvider": "unknown",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "No menu links found on homepage"
+  },
+  {
+    "entity_name": "Herbology",
+    "website": "https://herbologynyc.com",
+    "menuUrl": "https://herbologynyc.com/menu",
+    "menuProvider": "unknown",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /menu"
+  },
+  {
+    "entity_name": "The Flowery Brooklyn",
+    "website": "https://www.thefloweryny.com",
+    "menuUrl": "https://www.thefloweryny.com/menu",
+    "menuProvider": "unknown",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /menu"
+  },
+  {
+    "entity_name": "Puro Vita",
+    "website": "https://purovita.com",
+    "menuUrl": "https://purovita.com/menu",
+    "menuProvider": "blaze",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /menu"
+  },
+  {
+    "entity_name": "StashMaster NYC",
+    "website": "https://stashmasternyc.com",
+    "menuUrl": "https://stashmasternyc.com/shop",
+    "menuProvider": "dutchie",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /shop"
+  },
+  {
+    "entity_name": "Kushmart",
+    "website": "https://kushmart.com/",
+    "menuUrl": "https://kushmart.com/menu",
+    "menuProvider": "blaze",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /menu"
+  },
+  {
+    "entity_name": "Kaya Bliss Dispensary",
+    "website": "https://kayablissnyc.com",
+    "menuUrl": "https://kayablissnyc.com/shop",
+    "menuProvider": "dutchie",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /shop"
+  },
+  {
+    "entity_name": "The Spot Dispensary",
+    "website": "https://thespotdispensary.com",
+    "menuUrl": "https://thespotdispensary.com/menu",
+    "menuProvider": "blaze",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /menu"
+  },
+  {
+    "entity_name": "Caffiend: The Bushwick Dispensary",
+    "website": null,
+    "menuUrl": null,
+    "menuProvider": null,
+    "menuValidated": false,
+    "discoveryMethod": null,
+    "notes": "No website provided"
+  },
+  {
+    "entity_name": "RNR Dispensary",
+    "website": "https://rnrdispensary.com",
+    "menuUrl": "https://rnrdispensary.com/menu",
+    "menuProvider": "unknown",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /menu"
+  },
+  {
+    "entity_name": "Yerba Buena",
+    "website": "https://yerbabuena.nyc/",
+    "menuUrl": "https://yerbabuena.nyc/menu",
+    "menuProvider": "blaze",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /menu"
+  },
+  {
+    "entity_name": "Coney Island Cannabis",
+    "website": "http://www.coneyislandcannabisny.com",
+    "menuUrl": null,
+    "menuProvider": null,
+    "menuValidated": false,
+    "discoveryMethod": null,
+    "notes": "Error: Failed to fetch http://www.coneyislandcannabisny.com: getaddrinfo ENOTFOUND www.coneyislandcannabisny.com"
+  },
+  {
+    "entity_name": "Jungle Kingdom Flower",
+    "website": "https://www.junglekingdomflower.com",
+    "menuUrl": "https://www.junglekingdomflower.com/menu",
+    "menuProvider": "unknown",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /menu"
+  },
+  {
+    "entity_name": "OC Dispensary",
+    "website": "https://ocdispensary.co",
+    "menuUrl": "https://ocdispensary.co/shop",
+    "menuProvider": "dutchie",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /shop"
+  },
+  {
+    "entity_name": "Bud City Cannabis",
+    "website": "https://budcityny.com",
+    "menuUrl": "https://budcityny.com/cannabis",
+    "menuProvider": "unknown",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "No menu links found on homepage"
+  },
+  {
+    "entity_name": "Soulmate",
+    "website": "https://soulmatebk.com",
+    "menuUrl": "https://soulmatebk.com/shop",
+    "menuProvider": "unknown",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "No menu links found on homepage"
+  },
+  {
+    "entity_name": "Quality Roots",
+    "website": "https://qualityroots.nyc",
+    "menuUrl": "https://qualityroots.nyc/store",
+    "menuProvider": "unknown",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /store"
+  },
+  {
+    "entity_name": "All Good Dispensary",
+    "website": "https://stayallgood.com",
+    "menuUrl": "https://stayallgood.com/shop",
+    "menuProvider": "blaze",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /shop"
+  },
+  {
+    "entity_name": "Quality Control Dispensary",
+    "website": "https://qualitycontroldispensary.com/",
+    "menuUrl": "https://qualitycontroldispensary.com/shop",
+    "menuProvider": "dutchie",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /shop"
+  },
+  {
+    "entity_name": "Green Apple",
+    "website": "https://www.greenapple.nyc",
+    "menuUrl": "https://www.greenapple.nyc/cannabis",
+    "menuProvider": "unknown",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "No menu links found on homepage"
+  },
+  {
+    "entity_name": "Ignyte Red Hook",
+    "website": "https://ignyteny.com",
+    "menuUrl": null,
+    "menuProvider": "unknown",
+    "menuValidated": false,
+    "discoveryMethod": null,
+    "notes": "No menu links found on homepage"
+  },
+  {
+    "entity_name": "Q Dispensary",
+    "website": "https://qiscannabis.com",
+    "menuUrl": "https://qiscannabis.com/shop",
+    "menuProvider": "unknown",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /shop"
+  },
+  {
+    "entity_name": "High Dankery",
+    "website": "https://highdankery.com",
+    "menuUrl": "https://highdankery.com/store",
+    "menuProvider": "unknown",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /store"
+  },
+  {
+    "entity_name": "Verdi Park Slope",
+    "website": "https://verdicannabis.com",
+    "menuUrl": "https://verdicannabis.com/shop",
+    "menuProvider": "dutchie",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /shop"
+  },
+  {
+    "entity_name": "High Tidez",
+    "website": "https://hightidezci.com",
+    "menuUrl": "https://hightidezci.com/menu",
+    "menuProvider": "unknown",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /menu"
+  },
+  {
+    "entity_name": "Grams Cannabis",
+    "website": "https://www.gramsbk.com",
+    "menuUrl": "https://www.gramsbk.com/menu",
+    "menuProvider": "unknown",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /menu"
+  },
+  {
+    "entity_name": "Budega NYC",
+    "website": "https://budega.nyc",
+    "menuUrl": "https://budega.nyc/menu",
+    "menuProvider": "unknown",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /menu"
+  },
+  {
+    "entity_name": "Twenty8Gramz",
+    "website": "https://www.twenty8gramz.com",
+    "menuUrl": "https://www.twenty8gramz.com/shop",
+    "menuProvider": "weedmaps",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /shop"
+  },
+  {
+    "entity_name": "FlynnStoned Greenpoint",
+    "website": "https://flynnstoned.com",
+    "menuUrl": "https://flynnstoned.com/shop",
+    "menuProvider": "blaze",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /shop"
+  },
+  {
+    "entity_name": "Forever 420",
+    "website": "https://www.forever420ny.com",
+    "menuUrl": "https://www.forever420ny.com/menu",
+    "menuProvider": "unknown",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /menu"
+  },
+  {
+    "entity_name": "Cannalicious",
+    "website": "https://www.cannaliciousnyc.com",
+    "menuUrl": "https://www.cannaliciousnyc.com/store",
+    "menuProvider": "unknown",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /store"
+  },
+  {
+    "entity_name": "NSH Cannabis Dispensary",
+    "website": null,
+    "menuUrl": null,
+    "menuProvider": null,
+    "menuValidated": false,
+    "discoveryMethod": null,
+    "notes": "No website provided"
+  },
+  {
+    "entity_name": "Kaya Bliss Brooklyn Heights",
+    "website": "https://kayablissnyc.com",
+    "menuUrl": "https://kayablissnyc.com/shop",
+    "menuProvider": "dutchie",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /shop"
+  },
+  {
+    "entity_name": "Erudito Cannabis Boutique",
+    "website": "https://www.erudito.nyc",
+    "menuUrl": "https://www.erudito.nyc/shop",
+    "menuProvider": "unknown",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /shop"
+  },
+  {
+    "entity_name": "Greene Street",
+    "website": "https://gstnydispensary.com",
+    "menuUrl": "https://gstnydispensary.com/cannabis",
+    "menuProvider": "unknown",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "No menu links found on homepage"
+  },
+  {
+    "entity_name": "FlynnStoned Bay Ridge",
+    "website": "https://flynnstoned.com",
+    "menuUrl": "https://flynnstoned.com/menu",
+    "menuProvider": "blaze",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /menu"
+  },
+  {
+    "entity_name": "Paradise Cannabis",
+    "website": "https://www.paradisecannabisnyc.com",
+    "menuUrl": "https://www.paradisecannabisnyc.com/store",
+    "menuProvider": "unknown",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /store"
+  },
+  {
+    "entity_name": "Brooklyn Organic Buds",
+    "website": "https://brooklynorganicbuds.com",
+    "menuUrl": "https://brooklynorganicbuds.com/store",
+    "menuProvider": "unknown",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /store"
+  },
+  {
+    "entity_name": "Buzzy",
+    "website": "https://www.getbuzzy.com",
+    "menuUrl": "https://www.getbuzzy.com/menu",
+    "menuProvider": "dutchie",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /menu"
+  },
+  {
+    "entity_name": "Chrome Flowers",
+    "website": "https://chromeflwrs.com",
+    "menuUrl": "https://chromeflwrs.com/shop",
+    "menuProvider": "unknown",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /shop"
+  },
+  {
+    "entity_name": "7 Leaf Clover",
+    "website": "https://www.7leafclovercannabis.com",
+    "menuUrl": "https://www.7leafclovercannabis.com/shop",
+    "menuProvider": "blaze",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /shop"
+  },
+  {
+    "entity_name": "Dagmar Cannabis Williamsburg",
+    "website": "https://dagmarcannabis.com",
+    "menuUrl": "https://dagmarcannabis.com/menu",
+    "menuProvider": "dutchie",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /menu"
+  },
+  {
+    "entity_name": "Weedly NYC",
+    "website": "https://weedlynyc.com",
+    "menuUrl": "https://weedlynyc.com/store",
+    "menuProvider": "unknown",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /store"
+  },
+  {
+    "entity_name": "Flower Daddy",
+    "website": "https://flowerdaddy.nyc",
+    "menuUrl": "https://flowerdaddy.nyc/products",
+    "menuProvider": "unknown",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /products"
+  },
+  {
+    "entity_name": "Easy Times",
+    "website": "https://easytimesny.com",
+    "menuUrl": "https://menus.dispenseapp.com/ebc5c94b7fa54813/menu",
+    "menuProvider": "unknown",
+    "menuValidated": true,
+    "discoveryMethod": "link_scan",
+    "notes": "Found 1 potential menu links"
+  },
+  {
+    "entity_name": "Animo Caribe",
+    "website": "https://animocaribe.com",
+    "menuUrl": "https://animocaribe.com/store",
+    "menuProvider": "unknown",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /store"
+  },
+  {
+    "entity_name": "Rustik Smokes",
+    "website": "https://rustiksmokes.com",
+    "menuUrl": "https://rustiksmokes.com/shop",
+    "menuProvider": "unknown",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /shop"
+  },
+  {
+    "entity_name": "Happy Buds Brooklyn",
+    "website": "https://www.happybudsbk.com",
+    "menuUrl": "https://www.happybudsbk.com/shop",
+    "menuProvider": "unknown",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /shop"
+  },
+  {
+    "entity_name": "Kushmart Brooklyn",
+    "website": "https://kushmart.com",
+    "menuUrl": "https://kushmart.com/menu",
+    "menuProvider": "blaze",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /menu"
+  }
+]

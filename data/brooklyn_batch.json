@@ -1,0 +1,672 @@
+[
+  {
+    "entity_name": "Grow Together",
+    "address": "2370 Coney Island Ave",
+    "city": "Brooklyn",
+    "zip_code": "11223",
+    "website": "https://bkdispensary.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "BK Exotic",
+    "address": "1056 Flatbush Ave",
+    "city": "Brooklyn",
+    "zip_code": "11226",
+    "website": "http://www.brooklynexotic.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "The Emerald Dispensary",
+    "address": "85 Suydam St",
+    "city": "Brooklyn",
+    "zip_code": "11221",
+    "website": "https://theemeralddispensary.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Tiki Leaves",
+    "address": "1511 Neptune Ave",
+    "city": "Brooklyn",
+    "zip_code": "11224",
+    "website": "http://www.tikileaves.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "The Travel Agency Downtown Brooklyn",
+    "address": "118 Flatbush Ave",
+    "city": "Brooklyn",
+    "zip_code": "11217",
+    "website": "http://thetravelagency.co",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Matawana Dispensary",
+    "address": "533 5th Ave",
+    "city": "Brooklyn",
+    "zip_code": "11215",
+    "website": "https://matawanany.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Misha's Flower Shop",
+    "address": "299 Knickerbocker Ave",
+    "city": "Brooklyn",
+    "zip_code": "11237",
+    "website": "https://www.mishasflowershop.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Canna Life NY Inc (dba Hii)",
+    "address": "152 Bedford Ave",
+    "city": "Brooklyn",
+    "zip_code": "11249",
+    "website": "https://www.hiinyc.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Society House",
+    "address": "2441 Flatbush Ave",
+    "city": "Brooklyn",
+    "zip_code": "10710",
+    "website": "https://www.societyhousebk.com/",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Bedford Club",
+    "address": "1102 Bedford Ave",
+    "city": "Brooklyn",
+    "zip_code": "11216",
+    "website": "https://bedfordclub.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Chronic Brooklyn",
+    "address": "483 3rd Ave",
+    "city": "Brooklyn",
+    "zip_code": "11215",
+    "website": "https://chronicbrooklyn.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Beleaf BK",
+    "address": "1077 Atlantic Ave",
+    "city": "Brooklyn",
+    "zip_code": "11238",
+    "website": "https://beleafny.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Brooklyn Bourne",
+    "address": "2225 Church Ave",
+    "city": "Brooklyn",
+    "zip_code": "11226",
+    "website": "http://brooklynbourne.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Gotham Williamsburg",
+    "address": "300 Kent Ave",
+    "city": "Brooklyn",
+    "zip_code": "11249",
+    "website": "https://gotham.nyc",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Twisted Vibration",
+    "address": "301 Broadway",
+    "city": "Brooklyn",
+    "zip_code": "11211",
+    "website": "https://twistedvibration.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Fireleaf",
+    "address": "2102 Ralph Ave",
+    "city": "Brooklyn",
+    "zip_code": "11234",
+    "website": "https://www.fireleafny.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Happy Munkey Brooklyn",
+    "address": "453 Fulton St",
+    "city": "Brooklyn",
+    "zip_code": "11201",
+    "website": "https://happymunkey.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "By Any Other Name",
+    "address": "946 Fulton St",
+    "city": "Brooklyn",
+    "zip_code": "11238",
+    "website": "https://byanyothernamebk.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "The Plug",
+    "address": "428 Rogers Ave",
+    "city": "Brooklyn",
+    "zip_code": "11225",
+    "website": "https://theplugny.com/",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Herbology",
+    "address": "304 Ellery St",
+    "city": "Brooklyn",
+    "zip_code": "11206",
+    "website": "https://herbologynyc.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "The Flowery Brooklyn",
+    "address": "692 Grand St",
+    "city": "Brooklyn",
+    "zip_code": "11211",
+    "website": "https://www.thefloweryny.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Puro Vita",
+    "address": "288 Flushing Ave",
+    "city": "Brooklyn",
+    "zip_code": "11205",
+    "website": "https://purovita.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "StashMaster NYC",
+    "address": "1119 Broadway",
+    "city": "Brooklyn",
+    "zip_code": "11221",
+    "website": "https://stashmasternyc.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Kushmart",
+    "address": "1413 Kings Hwy",
+    "city": "Brooklyn",
+    "zip_code": "11229",
+    "website": "https://kushmart.com/",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Kaya Bliss Dispensary",
+    "address": "8412 3rd Ave",
+    "city": "Brooklyn",
+    "zip_code": "11209",
+    "website": "https://kayablissnyc.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "The Spot Dispensary",
+    "address": "154 Vanderbilt Ave",
+    "city": "Brooklyn",
+    "zip_code": "11205",
+    "website": "https://thespotdispensary.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Caffiend: The Bushwick Dispensary",
+    "address": "892 Wyckoff Ave",
+    "city": "Brooklyn",
+    "zip_code": "11237",
+    "website": null,
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "RNR Dispensary",
+    "address": "21 Gardner Ave",
+    "city": "Brooklyn",
+    "zip_code": "11237",
+    "website": "https://rnrdispensary.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Yerba Buena",
+    "address": "292 Atlantic Ave",
+    "city": "Brooklyn",
+    "zip_code": "11201",
+    "website": "https://yerbabuena.nyc/",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Coney Island Cannabis",
+    "address": "875 Neptune Ave",
+    "city": "Brooklyn",
+    "zip_code": "11224",
+    "website": "http://www.coneyislandcannabisny.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Jungle Kingdom Flower",
+    "address": "515 Nostrand Ave",
+    "city": "Brooklyn",
+    "zip_code": "11216",
+    "website": "https://www.junglekingdomflower.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "OC Dispensary",
+    "address": "769 Franklin Ave",
+    "city": "Brooklyn",
+    "zip_code": "11238",
+    "website": "https://ocdispensary.co",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Bud City Cannabis",
+    "address": "3343 Fulton St",
+    "city": "Brooklyn",
+    "zip_code": "11208",
+    "website": "https://budcityny.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Soulmate",
+    "address": "237 Dekalb Ave",
+    "city": "Brooklyn",
+    "zip_code": "11205",
+    "website": "https://soulmatebk.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Quality Roots",
+    "address": "330 Tompkins Ave",
+    "city": "Brooklyn",
+    "zip_code": "11216",
+    "website": "https://qualityroots.nyc",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "All Good Dispensary",
+    "address": "3405 Avenue H",
+    "city": "Brooklyn",
+    "zip_code": "11211",
+    "website": "https://stayallgood.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Quality Control Dispensary",
+    "address": "3169 Coney Island Ave",
+    "city": "Brooklyn",
+    "zip_code": "11235",
+    "website": "https://qualitycontroldispensary.com/",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Green Apple",
+    "address": "572 Manhattan Ave",
+    "city": "Brooklyn",
+    "zip_code": "11222",
+    "website": "https://www.greenapple.nyc",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Ignyte Red Hook",
+    "address": "387 Van Brunt St",
+    "city": "Brooklyn",
+    "zip_code": "11231",
+    "website": "https://ignyteny.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Q Dispensary",
+    "address": "733 Flatbush Ave",
+    "city": "Brooklyn",
+    "zip_code": "11226",
+    "website": "https://qiscannabis.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "High Dankery",
+    "address": "7815 3rd Ave",
+    "city": "Brooklyn",
+    "zip_code": "11209",
+    "website": "https://highdankery.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Verdi Park Slope",
+    "address": "360 7th Ave",
+    "city": "Brooklyn",
+    "zip_code": "11215",
+    "website": "https://verdicannabis.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "High Tidez",
+    "address": "1029 Surf Ave",
+    "city": "Brooklyn",
+    "zip_code": "11224",
+    "website": "https://hightidezci.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Grams Cannabis",
+    "address": "360 Graham Ave",
+    "city": "Brooklyn",
+    "zip_code": "11211",
+    "website": "https://www.gramsbk.com",
+    "is_microbusiness": true,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Budega NYC",
+    "address": "321 4th Ave",
+    "city": "Brooklyn",
+    "zip_code": "11215",
+    "website": "https://budega.nyc",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Twenty8Gramz",
+    "address": "2201 Avenue U",
+    "city": "Brooklyn",
+    "zip_code": "11229",
+    "website": "https://www.twenty8gramz.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "FlynnStoned Greenpoint",
+    "address": "807 Manhattan Ave",
+    "city": "Brooklyn",
+    "zip_code": "11222",
+    "website": "https://flynnstoned.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Forever 420",
+    "address": "1118 Pennsylvania Ave",
+    "city": "Brooklyn",
+    "zip_code": "11207",
+    "website": "https://www.forever420ny.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Cannalicious",
+    "address": "435 5th Ave",
+    "city": "Brooklyn",
+    "zip_code": "11215",
+    "website": "https://www.cannaliciousnyc.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "NSH Cannabis Dispensary",
+    "address": "2280 Flatbush Ave",
+    "city": "Brooklyn",
+    "zip_code": "11234",
+    "website": null,
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Kaya Bliss Brooklyn Heights",
+    "address": "64 Henry St",
+    "city": "Brooklyn",
+    "zip_code": "11201",
+    "website": "https://kayablissnyc.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Erudito Cannabis Boutique",
+    "address": "120 Union St",
+    "city": "Brooklyn",
+    "zip_code": "11231",
+    "website": "https://www.erudito.nyc",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Greene Street",
+    "address": "3448 Nostrand Ave",
+    "city": "Brooklyn",
+    "zip_code": "11229",
+    "website": "https://gstnydispensary.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "FlynnStoned Bay Ridge",
+    "address": "8112 5th Ave",
+    "city": "Brooklyn",
+    "zip_code": "11209",
+    "website": "https://flynnstoned.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Paradise Cannabis",
+    "address": "1557 Fulton St",
+    "city": "Brooklyn",
+    "zip_code": "11216",
+    "website": "https://www.paradisecannabisnyc.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Brooklyn Organic Buds",
+    "address": "623 Bergen St",
+    "city": "Brooklyn",
+    "zip_code": "11238",
+    "website": "https://brooklynorganicbuds.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Buzzy",
+    "address": "137 Court St",
+    "city": "Brooklyn",
+    "zip_code": "11201",
+    "website": "https://www.getbuzzy.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Chrome Flowers",
+    "address": "2 Jewel St",
+    "city": "Brooklyn",
+    "zip_code": "11222",
+    "website": "https://chromeflwrs.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "7 Leaf Clover",
+    "address": "100 N 3rd St",
+    "city": "Brooklyn",
+    "zip_code": "11249",
+    "website": "https://www.7leafclovercannabis.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Dagmar Cannabis Williamsburg",
+    "address": "61 N 11th St",
+    "city": "Brooklyn",
+    "zip_code": "11249",
+    "website": "https://dagmarcannabis.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Weedly NYC",
+    "address": "9 Newkirk Plz",
+    "city": "Brooklyn",
+    "zip_code": "11226",
+    "website": "https://weedlynyc.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Flower Daddy",
+    "address": "539 Metropolitan Ave",
+    "city": "Brooklyn",
+    "zip_code": "11211",
+    "website": "https://flowerdaddy.nyc",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Easy Times",
+    "address": "2668 Coney Island Ave",
+    "city": "Brooklyn",
+    "zip_code": "11233",
+    "website": "https://easytimesny.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Animo Caribe",
+    "address": "2180 Clarendon Rd",
+    "city": "Brooklyn",
+    "zip_code": "11226",
+    "website": "https://animocaribe.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Rustik Smokes",
+    "address": "469 Dekalb Ave",
+    "city": "Brooklyn",
+    "zip_code": "11205",
+    "website": "https://rustiksmokes.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Happy Buds Brooklyn",
+    "address": "225 Malcolm X Blvd",
+    "city": "Brooklyn",
+    "zip_code": "11221",
+    "website": "https://www.happybudsbk.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Kushmart Brooklyn",
+    "address": "1601 Avenue U",
+    "city": "Brooklyn",
+    "zip_code": "11229",
+    "website": "https://kushmart.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  }
+]
