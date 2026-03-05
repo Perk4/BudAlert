@@ -9,6 +9,7 @@
     "convex:dev": "convex dev",
     "convex:deploy": "convex deploy",
     "seed:nys": "node scripts/seed-nys.mjs",
+    "register:methods": "node scripts/register-methods.mjs",
     "cluster:detect": "node scripts/cluster-detect.mjs",
     "cluster:stats": "node scripts/cluster-stats.mjs",
     "research:cluster": "node scripts/research-cluster.mjs",
