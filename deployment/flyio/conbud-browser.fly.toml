@@ -1,0 +1,49 @@
+# fly.toml - Conbud LES Browser Scraper
+# Browser-based scraper for GraphQL query extraction
+# 
+# Deploy: fly deploy -c deployment/flyio/conbud-browser.fly.toml --build-target browser
+# Scale: fly scale count 0 --app budalert-conbud-browser (use on-demand only)
+
+app = "budalert-conbud-browser"
+primary_region = "ewr" # Newark, NJ (closest to NYC)
+
+[build]
+  dockerfile = "scrapers/conbud/Dockerfile"
+  build-target = "browser"
+
+[env]
+  NODE_ENV = "production"
+  HEADLESS = "true"
+  PLAYWRIGHT_BROWSERS_PATH = "/ms-playwright"
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = true
+  auto_start_machines = true
+  min_machines_running = 0  # Only run when needed
+
+[http_service.concurrency]
+  type = "requests"
+  hard_limit = 10
+  soft_limit = 5
+
+# VM Resources (browser mode)
+[vm]
+  cpu_kind = "shared"
+  cpus = 2
+  memory_mb = 1024
+
+# Shared memory for browser
+[mounts]
+  source = "shm"
+  destination = "/dev/shm"
+  size_gb = 1
+
+# Health check
+[[checks]]
+  grace_period = "30s"
+  interval = "60s"
+  method = "GET"
+  timeout = "10s"
+  path = "/health"

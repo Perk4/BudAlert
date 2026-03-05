@@ -1,0 +1,47 @@
+# fly.toml - Housing Works Scraper
+# HTTP-only scraper (lightweight Alpine image)
+# 
+# Deploy: fly deploy -c deployment/flyio/housing-works.fly.toml
+# Scale: fly scale count 1 --app budalert-housing-works
+
+app = "budalert-housing-works"
+primary_region = "ewr" # Newark, NJ (closest to NYC)
+
+[build]
+  dockerfile = "scrapers/housing-works/Dockerfile"
+
+[env]
+  NODE_ENV = "production"
+  SCRAPER_TIMEOUT = "30000"
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = true
+  auto_start_machines = true
+  min_machines_running = 0  # Scale to zero when idle
+
+[http_service.concurrency]
+  type = "requests"
+  hard_limit = 25
+  soft_limit = 20
+
+# VM Resources (lightweight)
+[vm]
+  cpu_kind = "shared"
+  cpus = 1
+  memory_mb = 256
+
+# Health check
+[[checks]]
+  grace_period = "10s"
+  interval = "30s"
+  method = "GET"
+  timeout = "5s"
+  path = "/health"
+
+# Scheduled scraping via cron
+# Alternative: Use GitHub Actions or external scheduler
+# [services.cron]
+#   schedule = "0 */6 * * *"  # Every 6 hours
+#   cmd = ["node", "scraper.mjs"]

@@ -1,0 +1,42 @@
+# fly.toml - Conbud LES API Scraper
+# Lightweight GraphQL API scraper
+# 
+# Deploy: fly deploy -c deployment/flyio/conbud-api.fly.toml --build-target api-base
+# Scale: fly scale count 1 --app budalert-conbud-api
+
+app = "budalert-conbud-api"
+primary_region = "ewr" # Newark, NJ (closest to NYC)
+
+[build]
+  dockerfile = "scrapers/conbud/Dockerfile"
+  build-target = "api-base"
+
+[env]
+  NODE_ENV = "production"
+  SCRAPER_TIMEOUT = "30000"
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = true
+  auto_start_machines = true
+  min_machines_running = 0
+
+[http_service.concurrency]
+  type = "requests"
+  hard_limit = 25
+  soft_limit = 20
+
+# VM Resources (lightweight API)
+[vm]
+  cpu_kind = "shared"
+  cpus = 1
+  memory_mb = 256
+
+# Health check
+[[checks]]
+  grace_period = "10s"
+  interval = "30s"
+  method = "GET"
+  timeout = "5s"
+  path = "/health"

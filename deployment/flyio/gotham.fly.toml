@@ -1,0 +1,61 @@
+# fly.toml - Gotham NYC Scraper
+# Browser-based scraper (Playwright + Chromium)
+# 
+# Deploy: fly deploy -c deployment/flyio/gotham.fly.toml
+# Scale: fly scale count 1 --app budalert-gotham
+
+app = "budalert-gotham"
+primary_region = "ewr" # Newark, NJ (closest to NYC)
+
+[build]
+  dockerfile = "scrapers/gotham/Dockerfile"
+
+[env]
+  NODE_ENV = "production"
+  HEADLESS = "true"
+  PLAYWRIGHT_BROWSERS_PATH = "/ms-playwright"
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = true
+  auto_start_machines = true
+  min_machines_running = 0  # Scale to zero when idle
+
+[http_service.concurrency]
+  type = "requests"
+  hard_limit = 10
+  soft_limit = 5
+
+# VM Resources (browser needs more power)
+[vm]
+  cpu_kind = "shared"
+  cpus = 2
+  memory_mb = 1024
+
+# Increase shared memory for browser
+[mounts]
+  source = "shm"
+  destination = "/dev/shm"
+  size_gb = 1
+
+# Health check
+[[checks]]
+  grace_period = "30s"
+  interval = "60s"
+  method = "GET"
+  timeout = "10s"
+  path = "/health"
+
+# Prevent memory issues with Chromium
+[[vm.services]]
+  protocol = "tcp"
+  internal_port = 8080
+
+  [[vm.services.ports]]
+    handlers = ["http"]
+    port = 80
+
+  [[vm.services.ports]]
+    handlers = ["tls", "http"]
+    port = 443
