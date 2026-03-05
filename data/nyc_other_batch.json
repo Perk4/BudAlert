@@ -1,0 +1,362 @@
+[
+  {
+    "entity_name": "SESH NYC",
+    "address": "4219 Webster Ave",
+    "city": "Bronx",
+    "zip_code": "10470",
+    "website": "https://myseshnyc.com/",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Royal Leaf NY LLC (dba Statis Cannabis)",
+    "address": "817 E Tremont Ave",
+    "city": "Bronx",
+    "zip_code": "10460",
+    "website": "https://statiscannabis.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Terp Bros",
+    "address": "3610 Ditmars Blvd",
+    "city": "Queens",
+    "zip_code": "11105",
+    "website": "https://www.terpbrosnyc.com/",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Cannabis Emporium (dba Hush)",
+    "address": "2460 Williamsbridge Rd, Fl 1",
+    "city": "Bronx",
+    "zip_code": "10469",
+    "website": "https://hushny.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Just a Little Higher",
+    "address": null,
+    "city": "Queens",
+    "zip_code": null,
+    "website": "https://justalittlehigher.com",
+    "is_microbusiness": true,
+    "is_delivery_only": true,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "The Flowery Staten Island",
+    "address": "3022 Veterans Rd W",
+    "city": "Staten Island",
+    "zip_code": "10309",
+    "website": "https://thefloweryny.com/",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "NUGHUB NY",
+    "address": "1350 Forest Ave",
+    "city": "Staten Island",
+    "zip_code": "10302",
+    "website": "https://nughubny.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "High Stone",
+    "address": "1938 Clove Rd",
+    "city": "Staten Island",
+    "zip_code": "10304",
+    "website": "https://www.highstone.nyc",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Bronx Joint",
+    "address": "925 Hunts Point Ave",
+    "city": "Bronx",
+    "zip_code": "10459",
+    "website": "https://thebronxjoint.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Two Buds Dispensary",
+    "address": "696 East 241st St",
+    "city": "Bronx",
+    "zip_code": "10470",
+    "website": "https://twobudsdispensary.nyc",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "CONBUD Bronx (Summit Canna)",
+    "address": "2412 Third Ave",
+    "city": "Bronx",
+    "zip_code": "10454",
+    "website": "https://www.conbudbx.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "The Weed Shoppe Inc",
+    "address": "4906 Arthur Kill Rd",
+    "city": "Staten Island",
+    "zip_code": "10309",
+    "website": "https://theweedshoppe.co",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Freshly Baked NYC 2",
+    "address": "2375 Arthur Ave",
+    "city": "Bronx",
+    "zip_code": "10458",
+    "website": "https://freshlybaked.nyc",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Green Sun (dba Hibernica)",
+    "address": "3220 Westchester Ave",
+    "city": "Bronx",
+    "zip_code": "10461",
+    "website": "https://shophibernica.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "ZenZest",
+    "address": "2343 Forest Ave",
+    "city": "Staten Island",
+    "zip_code": "10303",
+    "website": "https://zenzest.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Bleu Leaf Dispensary",
+    "address": "2034 Jerome Ave",
+    "city": "Bronx",
+    "zip_code": "10453",
+    "website": "https://bleuleafdispensary.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Frass Box",
+    "address": "3633 Kingsbridge Ave",
+    "city": "Bronx",
+    "zip_code": "10463",
+    "website": "https://frassboxcannabis.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "My Bud 420",
+    "address": "1798 E Tremont Ave",
+    "city": "Bronx",
+    "zip_code": "10460",
+    "website": "https://mybud420.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Smoking Scholars",
+    "address": "784 Allerton Ave",
+    "city": "Bronx",
+    "zip_code": "10467",
+    "website": "https://smokingscholarsnyc.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "CONBUD by Yankee Stadium",
+    "address": "898 Gerard Ave",
+    "city": "Bronx",
+    "zip_code": "10452",
+    "website": "https://conbud.com/locations/gerard-avenue/",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Clouditude Dispensary",
+    "address": "4034 Hylan Blvd",
+    "city": "Staten Island",
+    "zip_code": "10308",
+    "website": "https://clouditudedispensary.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Green Flower Wellness Floral Park",
+    "address": "270-01 Hillside Ave",
+    "city": "Queens",
+    "zip_code": "11064",
+    "website": "https://greenflowerwellness.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Guardian Wellness",
+    "address": "2500 Arthur Ave",
+    "city": "Bronx",
+    "zip_code": "10458",
+    "website": "https://guardianwellnessretail.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "ZenZest Queens",
+    "address": "27206 Union Tpke",
+    "city": "Queens",
+    "zip_code": "11040",
+    "website": "https://zenzest.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Herbwell Cannabis Bronx",
+    "address": "372 E Fordham Rd",
+    "city": "Bronx",
+    "zip_code": "10458",
+    "website": "https://www.herbwellcannabis.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "The THC Shop Bronx",
+    "address": "1031 Southern Blvd",
+    "city": "Bronx",
+    "zip_code": "10459",
+    "website": "https://ourthcshop.com/bronx/",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Oz Dispensary",
+    "address": "956 Jewett Ave",
+    "city": "Staten Island",
+    "zip_code": "10314",
+    "website": "https://ozdispensary.com/",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Nube NYC",
+    "address": "3551 Boston Rd",
+    "city": "Bronx",
+    "zip_code": "10469",
+    "website": "https://nube.nyc/home#",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "The Flowery Richmond Hill",
+    "address": "2059 Richmond Ave",
+    "city": "Staten Island",
+    "zip_code": "10314",
+    "website": "https://www.thefloweryny.com/",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "FlynnStoned Staten Island",
+    "address": "755 Forest Ave",
+    "city": "Staten Island",
+    "zip_code": "10310",
+    "website": "https://flynnstoned.com/?loc=nyc-staten-island",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "BX Buddiez",
+    "address": "2935 3rd Ave",
+    "city": "Bronx",
+    "zip_code": "10455",
+    "website": "https://bxbuddiez.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Gaslight Dispensary",
+    "address": "465 Forest Ave",
+    "city": "Staten Island",
+    "zip_code": "10301",
+    "website": "https://gaslightdispensary.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Say Less",
+    "address": "3764 E Tremont Ave",
+    "city": "Bronx",
+    "zip_code": "10465",
+    "website": "http://www.saylessny.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Happy Times Staten Island",
+    "address": "1399 Hylan Blvd",
+    "city": "Staten Island",
+    "zip_code": "10305",
+    "website": "https://happytimescannabis.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "Celestial Herbs Dispensary",
+    "address": "3430 Boston Rd",
+    "city": "Bronx",
+    "zip_code": "10467",
+    "website": "https://celestialherbsllc.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  },
+  {
+    "entity_name": "The Vault",
+    "address": "1151 Hylan Blvd",
+    "city": "Staten Island",
+    "zip_code": "10305",
+    "website": "https://thevaultsi.com",
+    "is_microbusiness": false,
+    "is_delivery_only": false,
+    "scraped_at": 1772681055515
+  }
+]

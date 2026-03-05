@@ -1,0 +1,326 @@
+[
+  {
+    "entity_name": "SESH NYC",
+    "website": "https://myseshnyc.com/",
+    "menuUrl": "https://myseshnyc.com/menu",
+    "menuProvider": "unknown",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /menu"
+  },
+  {
+    "entity_name": "Royal Leaf NY LLC (dba Statis Cannabis)",
+    "website": "https://statiscannabis.com",
+    "menuUrl": null,
+    "menuProvider": null,
+    "menuValidated": false,
+    "discoveryMethod": null,
+    "notes": "Error: Failed to fetch https://statiscannabis.com: write EPROTO 80F8A4B5BF7F0000:error:0A000410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1605:SSL alert number 40\n"
+  },
+  {
+    "entity_name": "Terp Bros",
+    "website": "https://www.terpbrosnyc.com/",
+    "menuUrl": "https://www.terpbrosnyc.com/cannabis",
+    "menuProvider": "unknown",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /cannabis"
+  },
+  {
+    "entity_name": "Cannabis Emporium (dba Hush)",
+    "website": "https://hushny.com",
+    "menuUrl": "https://hushny.com/menu",
+    "menuProvider": "unknown",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /menu"
+  },
+  {
+    "entity_name": "Just a Little Higher",
+    "website": "https://justalittlehigher.com",
+    "menuUrl": "https://justalittlehigher.com/store",
+    "menuProvider": "unknown",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /store"
+  },
+  {
+    "entity_name": "The Flowery Staten Island",
+    "website": "https://thefloweryny.com/",
+    "menuUrl": "https://thefloweryny.com/menu",
+    "menuProvider": "unknown",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /menu"
+  },
+  {
+    "entity_name": "NUGHUB NY",
+    "website": "https://nughubny.com",
+    "menuUrl": "https://nughubny.com/shop",
+    "menuProvider": "unknown",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /shop"
+  },
+  {
+    "entity_name": "High Stone",
+    "website": "https://www.highstone.nyc",
+    "menuUrl": "https://www.highstone.nyc/shop",
+    "menuProvider": "dutchie",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /shop"
+  },
+  {
+    "entity_name": "Bronx Joint",
+    "website": "https://thebronxjoint.com",
+    "menuUrl": "https://thebronxjoint.com/menu",
+    "menuProvider": "dutchie",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /menu"
+  },
+  {
+    "entity_name": "Two Buds Dispensary",
+    "website": "https://twobudsdispensary.nyc",
+    "menuUrl": "https://twobudsdispensary.nyc/store",
+    "menuProvider": "unknown",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /store"
+  },
+  {
+    "entity_name": "CONBUD Bronx (Summit Canna)",
+    "website": "https://www.conbudbx.com",
+    "menuUrl": null,
+    "menuProvider": null,
+    "menuValidated": false,
+    "discoveryMethod": null,
+    "notes": "Error: Failed to fetch https://www.conbudbx.com: timeout of 10000ms exceeded"
+  },
+  {
+    "entity_name": "The Weed Shoppe Inc",
+    "website": "https://theweedshoppe.co",
+    "menuUrl": "https://theweedshoppe.co/menu",
+    "menuProvider": "blaze",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /menu"
+  },
+  {
+    "entity_name": "Freshly Baked NYC 2",
+    "website": "https://freshlybaked.nyc",
+    "menuUrl": "https://freshlybaked.nyc/menu",
+    "menuProvider": "unknown",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /menu"
+  },
+  {
+    "entity_name": "Green Sun (dba Hibernica)",
+    "website": "https://shophibernica.com",
+    "menuUrl": null,
+    "menuProvider": "dutchie",
+    "menuValidated": false,
+    "discoveryMethod": null,
+    "notes": "No menu links found on homepage"
+  },
+  {
+    "entity_name": "ZenZest",
+    "website": "https://zenzest.com",
+    "menuUrl": "https://zenzest.com/cannabis",
+    "menuProvider": "unknown",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "No menu links found on homepage"
+  },
+  {
+    "entity_name": "Bleu Leaf Dispensary",
+    "website": "https://bleuleafdispensary.com",
+    "menuUrl": "https://menu.bleuleafdispensary.com/",
+    "menuProvider": "unknown",
+    "menuValidated": true,
+    "discoveryMethod": "link_scan",
+    "notes": "Found 7 potential menu links"
+  },
+  {
+    "entity_name": "Frass Box",
+    "website": "https://frassboxcannabis.com",
+    "menuUrl": "https://frassboxcannabis.com/menu",
+    "menuProvider": "unknown",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /menu"
+  },
+  {
+    "entity_name": "My Bud 420",
+    "website": "https://mybud420.com",
+    "menuUrl": "https://mybud420.com/cannabis",
+    "menuProvider": "unknown",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "No menu links found on homepage"
+  },
+  {
+    "entity_name": "Smoking Scholars",
+    "website": "https://smokingscholarsnyc.com",
+    "menuUrl": "https://smokingscholarsnyc.com/shop",
+    "menuProvider": "unknown",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /shop"
+  },
+  {
+    "entity_name": "CONBUD by Yankee Stadium",
+    "website": "https://conbud.com/locations/gerard-avenue/",
+    "menuUrl": "https://conbud.com/cannabis",
+    "menuProvider": "dutchie",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /cannabis"
+  },
+  {
+    "entity_name": "Clouditude Dispensary",
+    "website": "https://clouditudedispensary.com",
+    "menuUrl": "https://clouditudedispensary.com/menu",
+    "menuProvider": "unknown",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /menu"
+  },
+  {
+    "entity_name": "Green Flower Wellness Floral Park",
+    "website": "https://greenflowerwellness.com",
+    "menuUrl": "https://greenflowerwellness.com/cannabis",
+    "menuProvider": "unknown",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "No menu links found on homepage"
+  },
+  {
+    "entity_name": "Guardian Wellness",
+    "website": "https://guardianwellnessretail.com",
+    "menuUrl": "https://guardianwellnessretail.com/menu",
+    "menuProvider": "dutchie",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /menu"
+  },
+  {
+    "entity_name": "ZenZest Queens",
+    "website": "https://zenzest.com",
+    "menuUrl": "https://zenzest.com/cannabis",
+    "menuProvider": "unknown",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "No menu links found on homepage"
+  },
+  {
+    "entity_name": "Herbwell Cannabis Bronx",
+    "website": "https://www.herbwellcannabis.com",
+    "menuUrl": "https://www.herbwellcannabis.com/menu",
+    "menuProvider": "unknown",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /menu"
+  },
+  {
+    "entity_name": "The THC Shop Bronx",
+    "website": "https://ourthcshop.com/bronx/",
+    "menuUrl": "https://ourthcshop.com/menu",
+    "menuProvider": "unknown",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /menu"
+  },
+  {
+    "entity_name": "Oz Dispensary",
+    "website": "https://ozdispensary.com/",
+    "menuUrl": "https://ozdispensary.com/shop",
+    "menuProvider": "dutchie",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /shop"
+  },
+  {
+    "entity_name": "Nube NYC",
+    "website": "https://nube.nyc/home#",
+    "menuUrl": null,
+    "menuProvider": "unknown",
+    "menuValidated": false,
+    "discoveryMethod": null,
+    "notes": "No menu links found on homepage"
+  },
+  {
+    "entity_name": "The Flowery Richmond Hill",
+    "website": "https://www.thefloweryny.com/",
+    "menuUrl": "https://www.thefloweryny.com/menu",
+    "menuProvider": "unknown",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /menu"
+  },
+  {
+    "entity_name": "FlynnStoned Staten Island",
+    "website": "https://flynnstoned.com/?loc=nyc-staten-island",
+    "menuUrl": "https://flynnstoned.com/menu",
+    "menuProvider": "blaze",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /menu"
+  },
+  {
+    "entity_name": "BX Buddiez",
+    "website": "https://bxbuddiez.com",
+    "menuUrl": "https://bxbuddiez.com/shop",
+    "menuProvider": "unknown",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /shop"
+  },
+  {
+    "entity_name": "Gaslight Dispensary",
+    "website": "https://gaslightdispensary.com",
+    "menuUrl": "https://gaslightdispensary.com/menu",
+    "menuProvider": "dutchie",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /menu"
+  },
+  {
+    "entity_name": "Say Less",
+    "website": "http://www.saylessny.com",
+    "menuUrl": "http://www.saylessny.com/order",
+    "menuProvider": "dutchie",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /order"
+  },
+  {
+    "entity_name": "Happy Times Staten Island",
+    "website": "https://happytimescannabis.com",
+    "menuUrl": "https://happytimescannabis.com/menu",
+    "menuProvider": "unknown",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /menu"
+  },
+  {
+    "entity_name": "Celestial Herbs Dispensary",
+    "website": "https://celestialherbsllc.com",
+    "menuUrl": "https://celestialherbsllc.com/store",
+    "menuProvider": "unknown",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "Found via /store"
+  },
+  {
+    "entity_name": "The Vault",
+    "website": "https://thevaultsi.com",
+    "menuUrl": "https://thevaultsi.com/cannabis",
+    "menuProvider": "unknown",
+    "menuValidated": true,
+    "discoveryMethod": "common_path",
+    "notes": "No menu links found on homepage"
+  }
+]
