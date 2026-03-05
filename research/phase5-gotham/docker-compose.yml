@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  gotham-scraper:
+    build: .
+    container_name: gotham-scraper
+    volumes:
+      - ./output:/app/output
+      - ./scraper-curl.js:/app/scraper-curl.js
+      - ./scraper-wordpress-api.js:/app/scraper-wordpress-api.js
+    environment:
+      - NODE_ENV=production
+    network_mode: bridge
+    mem_limit: 512m
+    cpus: 1.0
