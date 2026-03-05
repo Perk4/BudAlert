@@ -1,0 +1,31 @@
+{
+  "name": "@budalert/conbud-scraper",
+  "version": "1.0.0",
+  "description": "Scraper for Conbud LES dispensary (Dutchie platform)",
+  "type": "module",
+  "main": "api-scraper.mjs",
+  "scripts": {
+    "scrape": "node api-scraper.mjs",
+    "scrape:browser": "node browser-scraper.mjs",
+    "scrape:browser:debug": "HEADLESS=false node browser-scraper.mjs",
+    "install:browsers": "npx playwright install chromium",
+    "test": "node api-scraper.mjs"
+  },
+  "keywords": [
+    "scraper",
+    "dutchie",
+    "dispensary",
+    "cannabis",
+    "graphql",
+    "budalert"
+  ],
+  "author": "BudAlert",
+  "license": "MIT",
+  "dependencies": {
+    "playwright": "^1.40.0",
+    "axios": "^1.6.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
