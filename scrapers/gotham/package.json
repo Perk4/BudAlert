@@ -1,0 +1,33 @@
+{
+  "name": "@budalert/gotham-scraper",
+  "version": "1.0.0",
+  "description": "Scraper for Gotham NYC dispensary (WordPress + Dovetail)",
+  "type": "module",
+  "main": "scraper.mjs",
+  "scripts": {
+    "scrape": "node scraper.mjs",
+    "scrape:browser": "node scraper-browser.mjs",
+    "scrape:browser:debug": "HEADLESS=false node scraper-browser.mjs",
+    "install:browsers": "npx playwright install chromium",
+    "test": "node test.mjs"
+  },
+  "keywords": [
+    "scraper",
+    "wordpress",
+    "dovetail",
+    "dispensary",
+    "cannabis",
+    "gotham-nyc",
+    "budalert"
+  ],
+  "author": "BudAlert",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "cheerio": "^1.0.0",
+    "playwright": "^1.40.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

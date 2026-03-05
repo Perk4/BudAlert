@@ -1,0 +1,106 @@
+# Docker Compose - Local Development Setup
+# Run all scrapers together for testing
+#
+# Usage:
+#   docker-compose up                  # Run all scrapers
+#   docker-compose up housing-works    # Run specific scraper
+#   docker-compose run gotham node test.mjs  # Run tests
+#   docker-compose down                # Stop all containers
+
+version: '3.8'
+
+services:
+  # ============================================
+  # Housing Works - HTTP-only (lightweight)
+  # ============================================
+  housing-works:
+    build:
+      context: ./housing-works
+      dockerfile: Dockerfile
+    container_name: scraper-housing-works
+    environment:
+      - NODE_ENV=production
+      - SCRAPER_TIMEOUT=30000
+    volumes:
+      # Mount output directory for scraped data
+      - ./output:/app/output
+    restart: unless-stopped
+    mem_limit: 256m
+    cpus: 0.5
+    networks:
+      - scraper-net
+
+  # ============================================
+  # Gotham NYC - Browser-based (Cloudflare bypass)
+  # ============================================
+  gotham:
+    build:
+      context: ./gotham
+      dockerfile: Dockerfile
+    container_name: scraper-gotham
+    environment:
+      - NODE_ENV=production
+      - HEADLESS=true
+      - PLAYWRIGHT_BROWSERS_PATH=/ms-playwright
+    volumes:
+      - ./output:/app/output
+    restart: unless-stopped
+    mem_limit: 1g
+    cpus: 1.0
+    networks:
+      - scraper-net
+    shm_size: 256m  # Shared memory for browser
+
+  # ============================================
+  # Conbud LES - API mode (default, lightweight)
+  # ============================================
+  conbud-api:
+    build:
+      context: ./conbud
+      dockerfile: Dockerfile
+      target: api-base
+    container_name: scraper-conbud-api
+    environment:
+      - NODE_ENV=production
+      - SCRAPER_TIMEOUT=30000
+    volumes:
+      - ./output:/app/output
+    restart: unless-stopped
+    mem_limit: 256m
+    cpus: 0.5
+    networks:
+      - scraper-net
+
+  # ============================================
+  # Conbud LES - Browser mode (for query extraction)
+  # ============================================
+  conbud-browser:
+    build:
+      context: ./conbud
+      dockerfile: Dockerfile
+      target: browser
+    container_name: scraper-conbud-browser
+    environment:
+      - NODE_ENV=production
+      - HEADLESS=true
+      - PLAYWRIGHT_BROWSERS_PATH=/ms-playwright
+    volumes:
+      - ./output:/app/output
+    restart: unless-stopped
+    mem_limit: 1g
+    cpus: 1.0
+    networks:
+      - scraper-net
+    shm_size: 256m
+    profiles:
+      - browser  # Only run when explicitly requested
+
+# Shared network for all scrapers
+networks:
+  scraper-net:
+    driver: bridge
+
+# Named volumes for persistent data
+volumes:
+  output:
+    driver: local
